@@ -1038,7 +1038,7 @@
 /* mortgage -service Page  */
 
 .breadCrumb-Sec {
-  margin-top: auto;
+  margin-top: 140px;
 }
 
 .breadcrumb-item.active {
@@ -1070,7 +1070,7 @@
 
 .mortage-Sec {
     position: relative;
-    top: 120px;
+    top: 60px;
 }
 
 .mortage-Sec .mortage-Con .mortage-title h2 {
