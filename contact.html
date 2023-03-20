@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- IMport FontAwesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- IMport FontAwesome CDN link for bootstrap icon -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>GIGABITESOFT</title>
+</head>
+
+<body style="overflow-x: hidden;">
+
+
+
+    <!-- NavBar SECTION -->
+    <section class="navbar-Sec">
+        <nav class="navbar navbar-expand-lg bg-light cusnavbar">
+            <div class="container">
+                <a class="navbar-brand order-1 gigabitesoft-logo" href="index.html">
+                    <img src="images/Logo__Black 1.png" alt="GigaBiteSoft">
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-edit navbar collapse navbar-collapse order-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn" type="submit"> <a href="login.html">Login</a></button>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand order-1 d-none user2" href="signup.html">
+                    <img src="images/user2.png" alt="GigaBiteSoft">
+                </a>
+            </div>
+        </nav>
+    </section>
+
+    <!--1. contactPage-Services-provide- Section-->
+    <section id="hero" class="first-sec hero d-flex align-items-center section-bg">
+        <div class="container-fluid ">
+            <div class="row  contact-Con services-Con about-Con  ">
+                <div class="col-lg-1">
+                    <!-- blank -->
+                </div>
+                <div
+                    class="col-lg-4 left-contact left-about-Con  order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                    <h1 data-aos="fade-up" class="aos-init aos-animate"> <span style="color:#1B8E93;">Get in
+                            touch</span> <br> with Us</h1>
+                    <h5 data-aos="fade-up" class="aos-init aos-animate">
+                        Please get in touch and our expert <br>
+                        support team will answer all your questions.</h5>
+
+                    <p class="map"><i class="fa fa-map-marker me-3" style="color:#1B8E93"></i>
+                        <span> Olive street,Evansville,Indiana 47714</span>
+                    </p>
+                    <p class="phone"> <i class="fa fa-phone me-3" style="color:#1B8E93"></i><span> +1 (917) 720-3759
+                        </span></p>
+                    <p class="envelope">
+                        <i class="fa fa-envelope me-3 " style="color:#1B8E93"></i>
+                        <span>info@gigabitesoft.com </span>
+                    </p>
+                </div>
+                <div class="col-lg-7 right-about-Con  order-1 order-lg-2 text-center text-lg-start">
+                    <div class="image-contact image-service image-about">
+                        <!-- images/contact.png -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ContactForm Section -->
+    <section class="contactForm-Sec">
+        <div class="container mt-5">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-7">
+                    <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-md-12 mt-3">
+                                <div class="form-groupC ">
+                                    <label class="label-input100 mt-2" for="first-name">Full Name<span
+                                            style="color:#FF0000;">*</span></label>
+                                    <input type="text" class="form-control mt-1" name="name" id="name"
+                                        placeholder="David Wisseman">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="form-groupC">
+                                    <label class="label-input100 mt-2" for="email">Email<span
+                                            style="color:#FF0000;">*</span></label>
+                                    <input type="email" class="form-control mt-1" name="email" id="email"
+                                        placeholder="davidwisseman09@gmail.com">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="form-groupC">
+                                    <label class="label-input100 mt-2" for="phone">Phone Number<span
+                                            style="color:#FF0000;">*</span></label>
+                                    <input type="number" class="form-control mt-1" name="phone" id="phone"
+                                        placeholder="+1 (917) 720-3759">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="form-groupC">
+                                    <label class="label-input100 mt-2" for="phone">Describe your
+                                        case<span style="color:#FF0000;">*</span></label>
+                                    <textarea name="message" class="form-control mt-1" id="message" cols="30" rows="4"
+                                        placeholder="Enter Message here"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <div class="form-groupC">
+                                    <button type="submit" class="contact-btn mt-4"> <span> Submit </span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--3. contactPage-Help-Sec -->
+    <section id="cta" class="about-help-sec help-Sec cta">
+        <div class="container help-Con  shadow-1-strong rounded mb-5 text-white">
+            <div class="row aos-init aos-animate" data-aos="zoom-out">
+                <div class="col-lg-1">
+                    <!-- blank Column -->
+                </div>
+                <div class="col-lg-7 help-Text ml-auto">
+                    <h3>Get Help from Our Services Now</h3>
+                    <p> Looking to improve lead generation efforts and streamline internal operations, while focusing on
+                        core business instead of lead generation. Frustrated with current agency's performance.</p>
+                </div>
+                <div class="col-lg-3 help-buttons help-btn-container text-center text-decoration-none">
+                    <button class="cta-btn help-btn align-middle">
+                        <a href="contactPage.html">Get Help Now</a>
+                    </button>
+                </div>
+                <div class="col-lg-1">
+                    <!-- blank Column -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. contactPage-customer-Section  -->
+    <section class="customer-Sec">
+        <div class="container px-4 py-5 customer-Sec" id="featured-3">
+            <h2 class="pb-5 text-center ">See what our customers have to say <br> About Us</h2>
+            <div class="row g-4 py-2 row-cols-1 row-cols-lg-3 customer-body d-flex justify-content-around ">
+                <div class="customer col customer-card">
+                    <div class="feature-icon d-flex align-items-center justify-content-center bg-gradient fs-2">
+                        <img src="images/commos.png" alt="commos">
+                    </div>
+                    <h3 class="text-center">Rachel Bradley</h3>
+                    <p class=" text-center">Leads generation website has
+                        been a game-changer for our business.
+                        We've seen a significant increase in the number of leads we're getting.</p>
+                </div>
+                <div class="customer col customer-card">
+                    <div class="feature-icon d-flex align-items-center justify-content-center bg-gradient fs-2">
+                        <img src="images/commos.png" alt="commos">
+                    </div>
+                    <h3 class="text-center">Patrick Townsend</h3>
+                    <p class=" text-center">Since we started using their
+                        service, we've seen a steady increase
+                        in the number of leads we're getting.</p>
+                </div>
+                <div class="customer col customer-card">
+                    <div class="feature-icon  d-flex align-items-center justify-content-center bg-gradient fs-2">
+                        <img src="images/commos.png" alt="commos">
+                    </div>
+                    <h3 class="text-center ">Meghan Stanley</h3>
+                    <p class=" text-center ">As a small business owner, leads generation has made it easy for me to
+                        get the leads. The leads are highly qualified and affordable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer -->
+    <div class="container-fluid footer-section">
+        <div class="container footer-con">
+            <footer class="text-center mt-auto text-lg-start text-white" style="background-color: #01575A">
+                <div class="container p-4 pb-0">
+                    <section class="footer-body">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4 col-xl-5 mx-auto mt-3 company-contact">
+                                <img src="images/Logo__White 1.png" alt="GigaBiteSoft">
+                                <p class="mt-2">Lead Generation Services & Outsourcing</p>
+                                <p><i class="fa fa-phone  me-3 text-light"></i>
+                                    <span>+1 (917) 720-3759</span>
+                                </p>
+                                <p><i class="fas fa-envelope me-3 fa-2xs text-light"></i>
+                                    <span>info@gigabitesoft.com</span>
+                                </p>
+                                <p><i class="fa fa-map-marker me-3 text-light"></i>
+                                    <span>Olive street, Evansville,Indiana 47714</span>
+                                </p>
+                            </div>
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 company">
+                                <h6 class="mb-4 font-weight-bold">Company</h6>
+                                <p> <a href="index.html">Home</a> </p>
+                                <p> <a href="about.html">About Us</a> </p>
+                                <p> <a href="services.html">Services</a> </p>
+                                <p> <a href="contact.html" class="active">Contact Us</a> </p>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 industry">
+                                <h6 class="mb-4 font-weight-bold"> Industries we serve </h6>
+                                <p> <a href="" class="active">Auto Insurance</a> </p>
+                                <p> <a href="" class="active">Home Insurance</a> </p>
+                                <p> <a href="" class="active"Health Insurance</a> </p>
+                                <p> <a href="" class="active">After Life Insurance</a> </p>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mt-3 support">
+                                <h6 class="mb-4 font-weight-bold"> Support </h6>
+                                <p> <a href="" class="active">Terms & Conditions</a> </p>
+                                <p> <a href="" class="active">Privacy Policy</a> </p>
+
+                                <h6 class="mb-4 font-weight-bold"> Follow Us </h6>
+                                <p class="icons-footer">
+                                    <img src="images/twitter.svg" alt="Bootstrap">
+                                    <img src="images/instagram.svg" alt="Bootstrap" class="ms-2">
+                                    <img src="images/facebook.svg" alt="Bootstrap" class="ms-2">
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="my-3">
+                    <section class="p-3 pt-0 footer-bottom">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-12 col-lg-12 text-center text-md-start">
+                                <div class="footer-copyright text-center text-light">
+                                    <h6>
+                                        Copyright © 2023 GigaBiteSoft . &nbsp
+                                        All
+                                        Rights Reserved.
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JS cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
