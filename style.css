@@ -142,9 +142,7 @@
     color: #F8F8F8;
 }
 
-.footer-body .row .company p a.active,
-.industry p a.active,
-.support p a.active {
+.footer-body .row .company p a.active{
     cursor: context-menu;
 }
 
@@ -747,6 +745,8 @@
 
 .blog-Sec .blog-Con .blog-B .card .image {
     overflow: hidden;
+    border-radius: 10px !important;
+
 }
 
 .blog-Sec .blog-Con .blog-B .card .image img {
@@ -1038,8 +1038,7 @@
 /* mortgage -service Page  */
 
 .breadCrumb-Sec {
-    position: relative;
-    top: 115px;
+  margin-top: auto;
 }
 
 .breadcrumb-item.active {
@@ -1235,8 +1234,7 @@ textarea {
 
 /* Blog-homepage Page */
 .breadCrumbBlog-Sec {
-    position: relative;
-    top: 30px;
+   margin-top: 140px;
 }
 
 .breadCrumb-Sec .breadCrumb-Con nav ol li span {
