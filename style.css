@@ -252,7 +252,7 @@
 /* 1. homePage-Qualified Leads Section/qualified-Cont */
 
 .hero .qualified-Cont .leftQ-Con .qualified .img-24by7 {
-    background-image: url(/images/24by7.png);
+    background-image: url(images/24by7.png);
     background-repeat: no-repeat;
     background-position: inherit;
     background-size: cover;
@@ -872,7 +872,7 @@
 /* 5. aboutPage-customer-Section */
 
 .about-Con .right-about-Con .image-about {
-    background-image: url(/images/about.png);
+    background-image: url(images/about.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: inherit;
@@ -950,7 +950,7 @@
 
 /* 2. service-Page leads Section */
 .about-Con .right-about-Con .image-service {
-    background-image: url(/images/services.png);
+    background-image: url(images/services.png);
 }
 
 .leads-Sec {
@@ -1126,7 +1126,7 @@
 
 /* 2. ContactForm Section */
 .about-Con .right-about-Con .image-contact {
-    background-image: url(/images/contact.png);
+    background-image: url(images/contact.png);
 }
 
 .contactForm .label {
@@ -1263,7 +1263,7 @@ textarea {
 
 .blogPage-Sec .blogPage-title .blogImg {
     height: 450px;
-    background: url(/images/blog1.png) center center;
+    background: url(images/blog1.png) center center;
     background-size: cover;
     border-radius: 20px;
     filter: drop-shadow(12px 12px 50px rgba(27, 142, 147, 0.25));
@@ -1734,7 +1734,7 @@ input {
 
     /* Help-Sec*/
     .help-Con {
-        background-image: url(/images/get-appointment-now-tab.png);
+        background-image: url(images/get-appointment-now-tab.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -1775,7 +1775,7 @@ input {
     }
 
     .rightQ-Con .image-home {
-        background-image: url(/images/home-Mobile.png);
+        background-image: url(images/home-Mobile.png);
         background-repeat: no-repeat;
         background-position: inherit;
         background-size: contain;
@@ -2007,7 +2007,7 @@ input {
 
     /* Help-Sec*/
     .help-Con {
-        background-image: url(/images/get-appointment-now-Mobile.png);
+        background-image: url(images/get-appointment-now-Mobile.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -2031,7 +2031,7 @@ input {
 
 
     .rightQ-Con .image-home {
-        background-image: url(/images/home-Mobile.png);
+        background-image: url(images/home-Mobile.png);
         background-repeat: no-repeat;
         background-position: inherit;
         background-size: contain;
@@ -2067,7 +2067,7 @@ input {
     }
 
     .leftQ-Con .leftQ-p .img-24by7 {
-        background-image: url(/images/24by7-Mobile.png);
+        background-image: url(images/24by7-Mobile.png);
         background-repeat: no-repeat;
         background-position: inherit;
         background-size: cover;
@@ -2139,7 +2139,7 @@ input {
 
     /* SignIn page */
     .img-signin {
-        background-image: url(/images/Login-Mobile.png) !important;
+        background-image: url(images/Login-Mobile.png) !important;
         height: 796px !important;
         background-position: center;
         background-repeat: no-repeat;
@@ -2237,7 +2237,7 @@ input {
     }
 
     .about-Con .right-about-Con .image-about {
-        background-image: url(/images/about-Mobile.png);
+        background-image: url(images/about-Mobile.png);
         background-repeat: no-repeat;
         background-position: cover;
         background-size: cover;
@@ -2281,7 +2281,7 @@ input {
 
 
     .about-Con .right-about-Con .image-service {
-        background-image: url(/images/service-Mobile.png);
+        background-image: url(images/service-Mobile.png);
         border: none;
         filter: none;
         border-radius: inherit;
@@ -2292,7 +2292,7 @@ input {
     }
 
     .about-Con .right-about-Con .image-contact {
-        background-image: url(/images/contact-Mobile.png);
+        background-image: url(images/contact-Mobile.png);
         border: none;
         filter: none;
         border-radius: inherit;
