@@ -17,6 +17,13 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- custom swiper css cdn link -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="
+    https://cdn.jsdelivr.net/npm/swiper@9.0.2/swiper-bundle.min.css
+    " rel="stylesheet">
+
     <!-- IMport FontAwesome CDN link for bootstrap icon -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -66,9 +73,9 @@
 
     <!--1. homePage-Qualified Leads Section-->
     <section id="hero" class="first-sec hero d-flex align-items-center section-bg">
-        <div class="container-fluid ">
+        <div class="container-fluid qualified-fluid">
             <div class="row qualified-Cont  ">
-                <div class="col-lg-1">
+                <div class="col-lg-1 blank-Q-left">
                     <!-- blank -->
                 </div>
                 <div
@@ -112,17 +119,20 @@
                     <div class="qualified-buttons d-flex aos-init aos-animate " data-aos="fade-up" data-aos-delay="200">
                         <div class="started-btn my-2 d-flex aos-init aos-animate " data-aos="fade-up"
                             data-aos-delay="200">
-                            <a class="btn" href="signUp.html" role="button">Get Started Now</a>
+                            <a  href="signUp.html" role="button">Get Started Now</a>
                         </div>
                         <div class="learn-white-btn my-2 d-flex aos-init aos-animate ms-3 " data-aos="fade-up"
                             data-aos-delay="200">
-                            <a class="btn" href="#" role="button">Learn More</a>
+                            <a  href="#" role="button">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7 rightQ-Con order-1 order-lg-2 text-center text-lg-start">
                     <div class="image-home">
                         <!-- images/home.png -->
+                        <img src="images/home.png" class="home-img" alt="">
+                        <!-- <img src="images/home-tab.png" class="home-tab"  alt=""> -->
+                        <img src="images/home-Mobile.png" class="home-mobile" alt="">
                     </div>
                 </div>
             </div>
@@ -143,7 +153,7 @@
                 </div>
                 <div
                     class="col-lg-6 pt-4 expertT pt-lg-0 d-flex justify-content-center align-items-flex-start flex-column">
-                    <h3 class="ms-2 text-start">Home Insurance Leads</h3>
+                    <h3 class="ms-2">Home Insurance Leads</h3>
                     <p class="mt-2 px-4"> Consumers are actively looking for homeowners insurance
                         as they purchase new homes or look to save money versus their
                         current policy. We’re the experts in finding these home consumers
@@ -206,13 +216,10 @@
                     <p> Looking to improve lead generation efforts and streamline internal operations, while focusing on
                         core business instead of lead generation. Frustrated with current agency's performance.</p>
                 </div>
-                <div class="col-lg-3 help-buttons help-btn-container text-center text-decoration-none">
+                <div class="col-lg-4 help-buttons help-btn-container text-center text-decoration-none">
                     <button class="cta-btn help-btn align-middle">
                         <a href="contact.html">Get Help Now</a>
                     </button>
-                </div>
-                <div class="col-lg-1">
-                    <!-- blank column -->
                 </div>
             </div>
         </div>
@@ -226,14 +233,15 @@
                 <div class="col-lg-5 diff-Con_One img-bg aos-init aos-animate">
                     <h3>What's different
                         about GigaBiteSoft?</h3>
-                    <div class="learn-btn my-3 d-flex aos-init aos-animate " data-aos="fade-up" data-aos-delay="200">
-                        <a class="btn" href="#" role="button">Learn More</a>
+                    <div class="learn-btn diff-learn-btn-a my-3 d-flex aos-init aos-animate " data-aos="fade-up"
+                        data-aos-delay="200">
+                        <a  href="#" role="button">Learn More</a>
                     </div>
                 </div>
                 <div class="col-lg-7 diff-Con-Two   d-flex flex-column justify-content-center">
                     <div class="icon-box  diff-Two  d-flex position-relative aos-init aos-animate border border-top border-end-0 border-bottom-0 border-start-0 border-dark pt-2 border-opacity-25"
                         data-aos="fade-up" data-aos-delay="100">
-                        <img src="images/bespke-logo.png" class="img-fluid bespke-logo" alt="Bespoke Leads">
+                        <img src="images/Bespoke Leads.svg" class="img-fluid bespke-logo" alt="Bespoke Leads">
                         <div>
                             <h6>Bespoke Leads</h6>
                             <p>We only generate lead that are bespoke as quality is all matters.</p>
@@ -241,7 +249,7 @@
                     </div>
                     <div class="icon-box  diff-Two  d-flex position-relative aos-init aos-animate border border-top border-end-0 border-bottom-0 border-start-0 border-dark pt-2 border-opacity-25"
                         data-aos="fade-up" data-aos-delay="200">
-                        <img src="images/group.png" class="img-fluid group" alt="Fast Turnaround">
+                        <img src="images/Fast Turnaround.svg" class="img-fluid group" alt="Fast Turnaround">
                         <div>
                             <h6 class="ms-2">Fast Turnaround</h6>
                             <p>Due to the size of our team we are able to create your campaign within days.</p>
@@ -249,7 +257,7 @@
                     </div>
                     <div class="icon-box diff-Two d-flex position-relative aos-init aos-animate border border-top border-end-0 border-bottom-0 border-start-0 border-dark pt-2 border-opacity-25"
                         data-aos="fade-up" data-aos-delay="300">
-                        <img src="images/account-manger.png" class="img-fluid account-manger" alt="Campaign Data">
+                        <img src="images/Campaign Data.svg" class="img-fluid account-manger" alt="Campaign Data">
                         <div>
                             <h6 class="ms-1">Campaign Data</h6>
                             <p>We analyze all of the data for our campaigns to increase your conversion rate.</p>
@@ -257,19 +265,26 @@
                     </div>
                     <div class="icon-box  diff-Two  d-flex position-relative aos-init aos-animate border border-top border-end-0 border-bottom-0 border-start-0 border-dark pt-2 border-opacity-25"
                         data-aos="fade-up" data-aos-delay="400">
-                        <img src="images/closed-lock.png" class="img-fluid closed-lock" alt="Industry Secrets">
+                        <img src="images/Industry Secrets.svg" class="img-fluid closed-lock" alt="Industry Secrets">
                         <div>
                             <h6 class="ms-1">Industry Secrets</h6>
                             <p>We also do other things for your campaign that we want to keep secrets.</p>
                         </div>
                     </div>
-                    <div class="icon-box  diff-Two  d-flex position-relative aos-init aos-animate border border-top border-end-0 border-bottom-0 border-start-0 border-dark pt-2 border-opacity-25"
+                    <div class="icon-box  diff-Two mob-border-diff d-flex position-relative aos-init aos-animate border border-top border-end-0 border-bottom-0 border-start-0 border-dark pt-2 border-opacity-25"
                         data-aos="fade-up" data-aos-delay="400">
-                        <img src="images/campaign-data.png" class="img-fluid campaign-data" alt="Account Manager">
+                        <img src="images/Account Manager.svg" class="img-fluid campaign-data" alt="Account Manager">
                         <div>
                             <h6 class="ms-3">Account Manager</h6>
                             <p>We provide every customer with their own dedicated account manager.</p>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4 diff-learn-Button">
+        
+                    <div class="learn-btn diff-learn-btn-b my-3 d-flex aos-init aos-animate " data-aos="fade-up"
+                        data-aos-delay="200">
+                        <a  href="#" role="button">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -288,11 +303,14 @@
                     </h4>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-4 bussiness-body aos-init aos-animate mt-5" data-aos="fade-up" data-aos-delay="">
+            <div class="row bussiness-body-row d-flex justify-content-center">
+                <div class="col-md-4 expand-reach-m bussiness-body aos-init aos-animate mt-5" data-aos="fade-up" data-aos-delay="">
                     <div class="feature-1 bussiness-features text-center">
-                        <div class="wrap-icon icon-1  mb-5">
+                        <div class=" expand-reach wrap-icon icon-1  mb-5">
                             <img src="images/expand-reach.png" class="img-fluid" alt="Expand Reach">
+                        </div>
+                        <div class="expand-reach-mob wrap-icon icon-1  mb-5">
+                            <img src="images/expand-reach-mob.png" class="img-fluid" alt="Expand Reach">
                         </div>
                         <h3 class="mb-3">Expand Reach</h3>
                         <p>Expand your reach & collect qualified <br>
@@ -300,10 +318,13 @@
                             opt-in offers that build your email list.</p>
                     </div>
                 </div>
-                <div class="col-md-4 bussiness-body aos-init aos-animate mt-5" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-1  bussiness-features text-center">
-                        <div class="wrap-icon icon-1  mb-5">
+                <div class="col-md-4 self-schedule-m bussiness-body aos-init aos-animate mt-5" data-aos="fade-up" data-aos-delay="100">
+                    <div class=" feature-1  bussiness-features text-center">
+                        <div class="self-sehedule wrap-icon icon-1  mb-5">
                             <img src="images/calendar_schedule.png" class="img-fluid" alt="Self-schedule">
+                        </div>
+                        <div class="self-sehedule-mob wrap-icon icon-1  mb-5">
+                            <img src="images/self-schedule-mob.png" class="img-fluid" alt="Self-schedule">
                         </div>
                         <h3 class="mb-3">Self-schedule</h3>
                         <p>Self-schedule and easily offer and <br>
@@ -322,7 +343,7 @@
             <div class="row bussiness-btn justify-content-center text-center mt-3">
                 <div class="col-md-4 bussiness-button aos-init aos-animate" data-aos="fade-up">
                     <div class="started-btn my-3 d-flex aos-init aos-animate " data-aos="fade-up" data-aos-delay="200">
-                        <a class="btn" href="#" role="button"><span>Get Started Now</span></a>
+                        <a  href="#" role="button">Get Started Now</a>
                     </div>
                 </div>
             </div>
@@ -334,13 +355,14 @@
     <section id="alt-services " class="alt-services choose-Sec">
         <div class="container choose-main-Con aos-init aos-animate" data-aos="fade-up">
             <div class="row choose-Con-body  gy-4">
-                <div class="col-lg-3 choose-Con_One img-bg aos-init aos-animate">
+                <div class="col-lg-4 choose-Con_One img-bg aos-init aos-animate">
                     <h6>Why Choose Us..?</h6>
-                    <div class="learn-btn my-3 d-flex aos-init aos-animate " data-aos="fade-up" data-aos-delay="200">
-                        <a class="btn" href="#" role="button"><span>Learn More</span></a>
+                    <div class="learn-btn choose-learn-btn-a my-3 d-flex aos-init aos-animate " data-aos="fade-up"
+                        data-aos-delay="200">
+                        <a  href="#" role="button">Learn More</a>
                     </div>
                 </div>
-                <div class="col-lg-3 choose-Con  d-flex flex-column justify-content-center">
+                <div class="col-lg-2 choose-Con ord-One d-flex flex-column justify-content-center">
                     <ul class="list-unstyled ">
                         <li> <span>Fresh & Real time</span> </li>
                         <li> <span>All the Attributes</span> </li>
@@ -348,7 +370,7 @@
                         <li> <span>Campaign Oriented</span> </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 choose-Con   d-flex flex-column justify-content-center">
+                <div class="col-lg-3 choose-Con ord-Three  d-flex flex-column justify-content-center">
                     <ul class="list-unstyled ">
                         <li> <span>Highest Connectivity</span> </li>
                         <li> <span>Verified Phone number</span> </li>
@@ -356,7 +378,7 @@
                         <li> <span>Quality Assurance</span> </li>
                     </ul>
                 </div>
-                <div class="col-lg-3 choose-Con  d-flex flex-column justify-content-center"
+                <div class="col-lg-3 choose-Con ord-Two d-flex flex-column"
                     style="padding-bottom: 30px;">
                     <ul class="list-unstyled ">
                         <li> <span>Maximum Conversion</span> </li>
@@ -365,20 +387,28 @@
                     </ul>
                 </div>
             </div>
+            <div class="row">
+                <div class="col choose-learn-btn-b-col">
+                    <div class="learn-btn choose-learn-btn-b my-3 d-flex aos-init aos-animate " data-aos="fade-up"
+                        data-aos-delay="200">
+                        <a  href="#" role="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
 
 
     <!--7. homePage-blog Section -->
-    <section class="blog-Sec">
+    <section class="blog-Sec blog-Sec-a">
         <div class="container blog-Con">
             <div class="row blog-T mb-5 text-center">
                 <h3>See Our Blog.</h3>
             </div>
             <div class="row blog-B">
                 <div class="clo-4 col-sm mb-3 blogs-Card">
-                    <div class="card">
+                    <div class="card card-slide">
                         <a href="blog_index.html">
                             <div class="image">
 
@@ -395,7 +425,7 @@
                     </div>
                 </div>
                 <div class="clo-4 col-sm mb-3 blogs-Card">
-                    <div class="card">
+                    <div class="card card-slide">
                         <a href="blog_index.html">
                             <div class="image">
                                 <img src="images/lead nutring.png" class="card-img" alt="lead nutring">
@@ -411,7 +441,7 @@
                     </div>
                 </div>
                 <div class="clo-4 col-sm blogs-Card">
-                    <div class="card">
+                    <div class="card card-slide">
                         <a href="blog_index.html">
                             <div class="image">
                                 <img src="images/lead generation.png" class="card-img" alt="lead generation">
@@ -431,6 +461,62 @@
         </div>
     </section>
 
+    <!-- Swiper -->
+    <section class="reviews blog-Sec blog-Sec-b">
+        <div class="container blog-Con">
+            <div class="row blog-T mb-5 text-center">
+                <h3>See Our Blog.</h3>
+            </div>
+            <div class="swiper reviews-slider">
+                <div class="swiper-wrapper blogs-Card">
+                    <div class="swiper-slide slide card card-slide " >
+                        <div class="image">
+                            <img src="images/lead-strategy.png" class="card-img" alt="lead-strategy">
+                        </div>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end blogCard-text">
+                            <a href="blog_index.html">
+                                <h6 class="card-title blogCard-title">Lead Generation
+                                    Strategies
+                                </h6>
+                                <p class="card-text">5 Proven Strategies for Generating
+                                    High-Quality Leads</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide card card-slide" >
+                        <div class="image">
+                            <img src="images/lead nutring.png" class="card-img" alt="lead nutring">
+                        </div>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end blogCard-text">
+                            <a href="blog_index.html">
+                                <h6 class="card-title blogCard-title">Lead Nurturing Techniques
+                                </h6>
+                                <p class="card-text ">The Importance of Lead Nurturing in the Sales
+                                    Funnel
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide card card-slide">
+                        <div class="image">
+                            <img src="images/lead generation.png" class="card-img" alt="lead generation">
+                        </div>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end blogCard-text">
+                            <a href="blog_index.html">
+                                <h6 class="card-title blogCard-title">Lead Generation Tools
+                                </h6>
+                                <p class="card-text">10 Lead Generation Tools Every Business Should
+                                    Be Using
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
 
 
     <!-- 8. homePage-Footer -->
@@ -442,7 +528,8 @@
                         <div class="row">
                             <div class="col-md-4 col-lg-4 col-xl-5 mx-auto mt-3 company-contact">
                                 <img src="images/Logo__White 1.png" alt="GigaBiteSoft">
-                                <p class="mt-2">Lead Generation Services & Outsourcing</p>
+                                <p class="mt-2 lead-footer">Lead Generation Services & Outsourcing</p>
+                                <!-- <h5 class="mt-2">Lead Generation Services & Outsourcing</h5> -->
                                 <p><i class="fa fa-phone  me-3 text-light"></i>
                                     <span>+1 (917) 720-3759</span>
                                 </p>
@@ -454,25 +541,25 @@
                                 </p>
                             </div>
                             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 company">
-                                <h6 class="mb-4 font-weight-bold">Company</h6>
+                                <h6 class=" font-weight-bold">Company</h6>
                                 <p> <a href="index.html" class="active">Home</a> </p>
                                 <p> <a href="about.html">About Us</a> </p>
                                 <p> <a href="services.html">Services</a> </p>
                                 <p> <a href="contact.html">Contact Us</a> </p>
                             </div>
                             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 industry">
-                                <h6 class="mb-4 font-weight-bold"> Industries we serve </h6>
+                                <h6 class=" font-weight-bold"> Industries we serve </h6>
                                 <p> <a href="" class="active">Auto Insurance</a> </p>
                                 <p> <a href="" class="active">Home Insurance</a> </p>
                                 <p> <a href="" class="active">Health Insurance</a> </p>
                                 <p> <a href="" class="active">After Life Insurance</a> </p>
                             </div>
                             <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mt-3 support">
-                                <h6 class="mb-4 font-weight-bold"> Support </h6>
+                                <h6 class=" font-weight-bold"> Support </h6>
                                 <p> <a href="" class="active">Terms & Conditions</a> </p>
                                 <p> <a href="" class="active">Privacy Policy</a> </p>
 
-                                <h6 class="mb-4 font-weight-bold"> Follow Us </h6>
+                                <h6 class=" font-weight-bold follow mt-2 mb-3"> Follow Us </h6>
                                 <p class="icons-footer">
                                     <img src="images/twitter.svg" alt="Bootstrap">
                                     <img src="images/instagram.svg" alt="Bootstrap" class="ms-2">
@@ -482,23 +569,24 @@
                         </div>
                     </section>
 
-                    <hr class="my-3">
-                    <section class="p-3 pt-0 footer-bottom">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-12 col-lg-12 text-center text-md-start">
-                                <div class="footer-copyright text-center text-light">
-                                    <h6>
-                                        Copyright © 2023 GigaBiteSoft . &nbsp
-                                        All
-                                        Rights Reserved.
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+
                 </div>
             </footer>
         </div>
+        <hr class="mt-4" style="border: 1px solid rgba(255, 255, 255, 0.2);">
+        <section class="pt-0 footer-bottom">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-12 col-lg-12 text-center text-md-start">
+                    <div class="footer-copyright text-center text-light">
+                        <h6>
+                            Copyright © 2023 GigaBiteSoft . &nbsp
+                            All
+                            Rights Reserved.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
 
@@ -506,7 +594,13 @@
     <!-- Bootstrap JS cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-    </script>
+        </script>
+    <!-- custom swiper javascript cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom javascript file link -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>
