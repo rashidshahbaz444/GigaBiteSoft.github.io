@@ -617,6 +617,10 @@ html {
     display: none;
 }
 
+.section-heading-mob{
+    display: none !important;
+}
+
 .bussiness-Con .bussiness-body .bussiness-features h3 {
     font-family: 'Outfit';
     font-style: normal;
@@ -2774,7 +2778,7 @@ input {
 
 }
 
-@media only screen and (min-width: 250px) and (max-width: 480px) {
+@media only screen and (min-width: 200px) and (max-width: 480px) {
     
     /* buttons */
     .started-btn {
@@ -3012,7 +3016,8 @@ input {
     }
 
     .bussiness-Con .bussiness-body .bussiness-features .expand-reach,
-    .bussiness-Con .bussiness-body .bussiness-features .self-sehedule {
+    .bussiness-Con .bussiness-body .bussiness-features .self-sehedule ,
+    .section-heading-tab{
         display: none !important;
     }
 
@@ -3022,6 +3027,14 @@ input {
     
     .bussiness-Sec {
         margin-top: 65px;
+    }
+
+    .section-heading-mob{
+        display: block !important;
+        width: auto !important;
+    }
+    .bussiness-btn{
+        margin-top: 0px !important;
     }
 
     /* -6.  homePage-Choose Section */
@@ -3124,9 +3137,13 @@ input {
 
     .customer-Con .body-swip .previous-btn,
     .customer-Con .body-swip .next-btn {
-        color: #f30d0d;
+        color: #D85601;
     }
-
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
+    {
+        font-size: xx-large !important;
+    }
     /* 3. aboutPage-Industries Section */
     
     .industries-Con .row .Industries-Features {
