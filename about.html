@@ -17,8 +17,13 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- IMport FontAwesome CDN link for bootstrap icon -->
+    <!-- Import FontAwesome CDN link for bootstrap icon -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Import swiper css cdn link -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href=" https://cdn.jsdelivr.net/npm/swiper@9.0.2/swiper-bundle.min.css" rel="stylesheet">
 
     <title>GIGABITESOFT</title>
 </head>
@@ -53,13 +58,13 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn" type="submit"> <a href="login.html">Login</a></button>
+                            <button class="" type="submit"> <a href="login.html">Login</a></button>
                         </li>
                     </ul>
                 </div>
                 <a class="navbar-brand order-1 d-none user2" href="signup.html">
                     <img src="images/user2.png" alt="GigaBiteSoft">
-                </a>    
+                </a>
             </div>
         </nav>
     </section>
@@ -67,29 +72,33 @@
 
     <!--1. aboutPage-getToKnow- Section-->
     <section id="hero" class="first-sec hero d-flex align-items-center section-bg">
-        <div class="container-fluid ">
-            <div class="row about-Con   ">
-                <div class="col-lg-1">
+        <div class="container-fluid qualified-fluid">
+            <div class="row about-Con  qualified-Cont ">
+                <div class="col-lg-1 blank-Q-left blank-about-left ">
                     <!-- blank -->
                 </div>
-                <div
-                    class="col-lg-4 left-about-Con  order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-                    <h1 data-aos="fade-up" class="aos-init aos-animate">Get to Know <br> More <span
-                            style="color:#1B8E93;"> About Us</span> </h1>
-                    <h5 data-aos="fade-up" class="aos-init aos-animate">We are the best B2C & B2B <br>
-                        leads Provider in USA. Leads Provider <br>
-                        is the Best options for new and small call centers.</h5>
-                    <div class="d-flex aos-init aos-animate " data-aos="fade-up" data-aos-delay="200">
-                        <div class="learn-white-btn my-2 d-flex aos-init aos-animate  " data-aos="fade-up"
-                            data-aos-delay="200">
-                            <a class="btn" href="#" role="button">Learn More</a>
+                <div class="col-lg-4 left-about-Con leftQ-Con order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                    <h1 class="about-tab-text" data-aos="fade-up" class="aos-init aos-animate">
+                        <span class="get-color"> Get to Know </span> <br> More <span style="color:#1B8E93;"> About Us</span> </h1>
+                    <h1 class="about-mobile-text" data-aos="fade-up" class="aos-init aos-animate">
+                        <span class="get-color"> Get to <br> Know More <br> <span style="color:#1B8E93;"> About Us</span>
+                    </h1>
+                    <h5 data-aos="fade-up" class="aos-init aos-animate">
+                        We are the best B2C & B2B <br> leads Provider in USA. Leads Provider <br> is the Best options for new and small call centers.
+                    </h5>
+                    <div class="d-flex aos-init aos-animate mt-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="learn-wh-btn my-2 d-flex aos-init aos-animate " data-aos="fade-up" data-aos-delay="200">
+                            <a href="#" class="learn-white-btn">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 right-about-Con  order-1 order-lg-2 text-center text-lg-start">
-                        <div class="image-about">
-                             <!-- images/about.png-->
-                        </div>
+                <div class="col-lg-7 right-about-Con rightQ-Con order-1 order-lg-2 text-center text-lg-start">
+                    <div class="image-about image-home">
+                        <!-- image for large Screen View-->
+                        <img src="images/about.png" alt="" class="about-img home-img">
+                        <!-- image for mobile Screen View-->
+                        <img src="images/about-Mobile.png" alt="" class="about-mobile home-mobile">
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,22 +112,13 @@
                     <p>Genuine B2B Leads</p>
                 </div>
                 <div class="row text-center quoted quotedA ">
-                    <p>If you are looking for genuine b2c leads provider for your call center your search ends here. We
-                        not
-                        only give you the
-                        best connectivity but also boost your business revenue. We bring you the best connected and
-                        updated
-                        leads so you don’t fall
-                        into the same trap of old and used data and end up wasting your time and money. It’s been more
-                        than
-                        9 years we are into this
-                        industry so we know better how to generate more and more new leads for international call
-                        centers.
-                        If you are doing call
-                        blasting for your call center we extract the same data which will go in this process. We update
-                        our
-                        data on a weekly
-                        basis so you will the latest and untouched data for your Business.</p>
+                    <p>If you are looking for genuine b2c leads provider for your call center your search ends here. We not only give you the
+                        best connectivity but also boost your business revenue. We bring you the best connected and updated leads so you don’t fall
+                        into the same trap of old and used data and end up wasting your time and money. It’s been more than 9 years we are into this
+                        industry so we know better how to generate more and more new leads for international call centers. If you are doing call
+                        blasting for your call center we extract the same data which will go in this process. We update our data on a weekly
+                        basis so you will the latest and untouched data for your Business.
+                    </p>
                 </div>
             </div>
         </div>
@@ -131,11 +131,11 @@
             <div class="row">
                 <div class="col-sm-5 Industries-title text-start ">
                     <h6>Industries we serve</h6>
-                    <p>The Experts in Quality Insurance Leads. We offer <br> the following leads as quoted or via live
-                        Transfers</p>
-                    <div class="industries-btn learn-btn my-3 d-flex aos-init aos-animate " data-aos="fade-up"
-                        data-aos-delay="200">
-                        <a class="btn" href="#" role="button"><span>Get Started Now</span></a>
+                    <p>
+                        The Experts in Quality Insurance Leads. We offer <br> the following leads as quoted or via live Transfers
+                    </p>
+                    <div class=" my-2 get-started-btn industries-btn industries-btn-a d-flex aos-init aos-animate " data-aos="fade-up" data-aos-delay="200">
+                        <a href="signUp.html" class=" started-btn"><span>Get Started Now</span> </a>
                     </div>
                 </div>
                 <div class="col-sm-7 my-4 Industries-Features">
@@ -146,87 +146,140 @@
                         </div>
                         <div class="col-6 col-sm-6 Industries-F industries-margin text-start  border border-start-0 border-top-0 border-end-0 border-background: #1B8E9340;  ">
                             <h6 class="ms-2">Health Insurance</h6>
-                            <p class="ms-2">Connects health insurance-seeking consumers with experienced agents for
-                                guidance.</p>
+                            <p class="ms-2 connect">
+                                Connects health insurance-seeking consumers with experienced agents for guidance.
+                            </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6 col-sm-6 Industries-F industries-border text-start border border-start-0 border-top-0 border-bottom-0 border-background: #1B8E9340;">
                             <h6 class="mt-4 ">Home Insurance</h6>
-                            <p>Experts in finding active home insurance consumers and providing quality leads and calls.
+                            <p>
+                                Experts in finding active home insurance consumers and providing quality leads and calls.
                             </p>
                         </div>
-                        <div class="col-6 col-sm-6 Industries-F industries-border text-start">
+                        <div class="col-6 col-sm-6 Industries-F industries-border industries-border-l text-start">
                             <h6 class="mt-4 ms-2">After life Insurance</h6>
-                            <p class="ms-2">Leading provider of burial insurance leads with access to consumer intent.
+                            <p class="ms-2 connect">
+                                Leading provider of burial insurance leads with access to consumer intent.
                             </p>
                         </div>
+                    </div>
+                    <div class=" get-started-btn industries-btn industries-btn-b my-2 d-flex aos-init aos-animate " data-aos="fade-up" data-aos-delay="200">
+                        <a href="#" class=" started-btn"><span>Get Started Now</span> </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
 
     <!--4. aboutPage-Help-Sec -->
     <section id="cta" class=" help-Sec cta">
         <div class="container help-Con  shadow-1-strong rounded mb-5 text-white">
             <div class="row aos-init aos-animate" data-aos="zoom-out">
-                <div class="col-lg-1">
+                <div class="col-lg-1 ">
                     <!-- blank Column -->
                 </div>
                 <div class="col-lg-7 help-Text ml-auto">
                     <h3>Get Help from Our Services Now</h3>
-                    <p> Looking to improve lead generation efforts and streamline internal operations, while focusing on
-                        core business instead of lead generation. Frustrated with current agency's performance.</p>
+                    <p> Looking to improve lead generation efforts and streamline internal operations, while focusing on 
+                        core business instead of lead generation. Frustrated with current agency's performance.
+                    </p>
                 </div>
                 <div class="col-lg-3 help-buttons help-btn-container text-center text-decoration-none">
-                    <button class="cta-btn help-btn align-middle">
-                        <a href="contact.html">Get Help Now</a>
-                    </button>
-                </div>
-                <div class="col-lg-1">
-                    <!-- blank Column -->
+                    <div class=" my-2 get-started-btn  d-flex aos-init aos-animate " data-aos="fade-up" data-aos-delay="200">
+                        <a href="contact.html" class=" started-btn help-btn"><span>Get Help Now</span> </a>
+                    </div>
+                    <div class="col-lg-1">
+                        <!-- blank Column -->
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
+    
     <!-- 5. aboutPage-customer-Section  -->
-    <section class="customer-Sec">
-        <div class="container px-4 py-5 customer-Sec" id="featured-3">
-            <h2 class="pb-5 text-center ">See what our customers have to say <br> About Us</h2>
+
+    <!-- for large Screen View -->
+    <section class="customer-Sec customer-Sec-tab">
+        <div class="container px-4 py-5 customer-Con" id="featured-3">
+            <h2 class="pb-5 text-center ">See what our customers have to say About Us</h2>
             <div class="row g-4 py-2 row-cols-1 row-cols-lg-3 customer-body d-flex justify-content-around ">
                 <div class="customer col customer-card">
                     <div class="feature-icon d-flex align-items-center justify-content-center bg-gradient fs-2">
                         <img src="images/commos.png" alt="Commos">
                     </div>
                     <h3 class="text-center">Rachel Bradley</h3>
-                    <p class=" text-center">Leads generation website has
-                        been a game-changer for our business.
-                        We've seen a significant increase in the number of leads we're getting.</p>
+                    <p class=" text-center">
+                        Leads generation website has been a game-changer for our business. We've seen a significant increase in the number of leads we're getting.
+                    </p>
                 </div>
                 <div class="customer col customer-card">
                     <div class="feature-icon d-flex align-items-center justify-content-center bg-gradient fs-2">
                         <img src="images/commos.png" alt="Commos">
                     </div>
                     <h3 class="text-center">Patrick Townsend</h3>
-                    <p class=" text-center">Since we started using their
-                        service, we've seen a steady increase
-                        in the number of leads we're getting.</p>
+                    <p class=" text-center">
+                        Since we started using their service, we've seen a steady increase in the number of leads we're getting.
+                    </p>
                 </div>
                 <div class="customer col customer-card">
                     <div class="feature-icon  d-flex align-items-center justify-content-center bg-gradient fs-2">
                         <img src="images/commos.png" alt="Commos">
                     </div>
                     <h3 class="text-center ">Meghan Stanley</h3>
-                    <p class=" text-center ">As a small business owner, leads generation has made it easy for me to
-                        get the leads. The leads are highly qualified and affordable.</p>
+                    <p class=" text-center ">
+                        As a small business owner, leads generation has made it easy for me to get the leads. The leads are highly qualified and affordable.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Swiper for Mobile View -->
+    <section class="reviews blog-Sec blog-Sec-b customer-Sec">
+        <div class="container blog-Con customer-Con">
+            <div class="row blog-T mb-5 text-center">
+                <h2>See what our customers have to say About Us</h2>
+            </div>
+            <div class="swiper mySwiper body-swip">
+                <div class="swiper-wrapper blogs-Card customer-body d-flex ">
+                    <div class="swiper-slide slide card card-slide customer customer-card" >
+                        <div class="feature-icon d-flex align-items-center justify-content-center bg-gradient fs-2">
+                            <img src="images/commos.png" alt="Commos">
+                        </div>
+                        <h3 class="text-center">Rachel Bradley</h3>
+                        <p class=" text-center">
+                            Leads generation website has been a game-changer for our business. We've seen a significant increase in the number of leads we're getting.
+                        </p>
+                    </div>
+                    <div class="swiper-slide slide card card-slide customer customer-card" >
+                        <div class="feature-icon d-flex align-items-center justify-content-center bg-gradient fs-2">
+                            <img src="images/commos.png" alt="Commos">
+                        </div>
+                        <h3 class="text-center">Patrick Townsend</h3>
+                        <p class=" text-center">
+                            Since we started using their service, we've seen a steady increase in the number of leads we're getting.
+                        </p>
+                    </div>
+                    <div class="swiper-slide slide card card-slide customer customer-card">
+                        <div class="feature-icon  d-flex align-items-center justify-content-center bg-gradient fs-2">
+                            <img src="images/commos.png" alt="Commos">
+                        </div>
+                        <h3 class="text-center ">Meghan Stanley</h3>
+                        <p class=" text-center ">
+                            As a small business owner, leads generation has made it easy for me to get the leads. The leads are highly qualified and affordable.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-button-next next-btn next-btn-customer"></div>
+                <div class="swiper-button-prev previous-btn previous-btn-customer"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>  
+        </div>
+    </section>
+
 
     <!--aboutPage-Footer -->
     <div class="container-fluid footer-section">
@@ -267,7 +320,7 @@
                                 <p> <a href="" class="active">Terms & Conditions</a> </p>
                                 <p> <a href="" class="active">Privacy Policy</a> </p>
 
-                                <h6 class="mb-4 font-weight-bold"> Follow Us </h6>
+                                <h6 class="mb-4 font-weight-bold mt-2"> Follow Us </h6>
                                 <p class="icons-footer">
                                     <img src="images/twitter.svg" alt="Bootstrap">
                                     <img src="images/instagram.svg" alt="Bootstrap" class="ms-2">
@@ -276,24 +329,23 @@
                             </div>
                         </div>
                     </section>
-
-                    <hr class="my-3">
-                    <section class="p-3 pt-0 footer-bottom">
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-12 col-lg-12 text-center text-md-start">
-                                <div class="footer-copyright text-center text-light">
-                                    <h6>
-                                        Copyright © 2023 GigaBiteSoft . &nbsp
-                                        All
-                                        Rights Reserved.
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                 </div>
             </footer>
         </div>
+        <hr class="mt-4" style="border: 1px solid rgba(255, 255, 255, 0.2);">
+        <section class="pt-0 footer-bottom">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-12 col-lg-12 text-center text-md-start">
+                    <div class="footer-copyright text-center text-light">
+                        <h6>
+                            Copyright © 2023 GigaBiteSoft . &nbsp
+                            All
+                            Rights Reserved.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
 
@@ -301,7 +353,13 @@
     <!-- Bootstrap JS cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-    </script>
+        </script>
+    <!-- Import swiper javascript cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+    <!-- custom javascript file link -->
+    <script src="script.js"></script>
 </body>
 
 </html>

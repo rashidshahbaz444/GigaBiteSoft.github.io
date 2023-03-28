@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
 
+
+/* General */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
     border: none;
 }
 
+html {
+    overflow-x: hidden;
 
-/* General */
+}
 
 /* Navbar Section */
 .navbar-Sec {
@@ -21,7 +25,6 @@
     z-index: 5;
     padding: 0px 0px;
 }
-
 
 .cusnavbar .container .gigabitesoft-logo img {
     width: 252px;
@@ -50,15 +53,17 @@
     color: var(--bs-navbar-active-color);
 }
 
-/* .nav-link:focus,
-.nav-link.active,
-.nav-link:hover {
-
-    color: rgba(0, 0, 0, 0.5);
-} */
-
-
 .cusnavbar .container .navbar-collapse ul li button {
+    background-color: #F8F8F8;
+}
+
+.cusnavbar .container .navbar-collapse ul li button a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -72,31 +77,23 @@
     border-radius: 50px;
 }
 
-.cusnavbar .container .navbar-collapse ul li button a {
-    text-decoration: none;
-    width: 38px;
-    height: 21px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #fff;
+.cusnavbar .container .navbar-collapse ul li button a:hover {
+    background: #4D4D4D;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: #FFFFFF;
+    transition-duration: 500ms;
+    outline: 0 solid transparent;
+    transition: ease-out;
 }
-
-
-.first-sec {
-    position: relative;
-    top: 73px;
-    margin-bottom: 150px;
-}
-
 
 /* Footer */
 .footer-section {
     margin-top: 100px;
     width: 100%;
     background: #01575A;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .footer-section .footer-con .footer-body .row .company-contact img {
@@ -178,9 +175,7 @@
     border-radius: 50px;
 }
 
-.started-btn a {
-    width: 115px;
-    height: 21px;
+.get-started-btn a {
     text-decoration: none;
     font-family: 'Poppins';
     font-style: normal;
@@ -195,12 +190,12 @@
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     color: #FFFFFF;
-    transition-duration: 300ms;
+    transition-duration: 500ms;
+    outline: 0 solid transparent;
     transition: ease-out;
 }
 
 .learn-btn {
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -214,9 +209,7 @@
     border-radius: 50px;
 }
 
-.learn-btn a {
-    width: 78px;
-    height: 21px;
+.learn-y-btn a {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -242,45 +235,33 @@
     align-items: center;
     padding: 10px 33px;
     gap: 8px;
-
     width: 146px;
     height: 41px;
-
     border: 1px solid #1B8E93;
     filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
     border-radius: 50px;
 
 }
 
-.learn-white-btn a {
+.learn-wh-btn a {
     text-decoration: none;
-    width: 78px;
-    height: 21px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height */
-
-
-    /* Text Color1 */
     color: #4D4D4D;
 }
 
-
-
 .learn-white-btn:hover {
+    color: #FFFFFF !important;
     background: #1B8E93;
     border: 1px solid #1B8E93;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     transition-duration: 300ms;
     transition: ease-out;
-    color: #FFFFFF;
 }
-
-
 
 /*1. HomePage */
 
@@ -323,8 +304,6 @@
 
 .hero .qualified-Cont .leftQ-Con ul li {
     display: flex;
-    /* flex-direction: row;
-    justify-content: flex-start; */
 }
 
 .hero .qualified-Cont .leftQ-Con ul li img {
@@ -333,6 +312,10 @@
     left: 0px;
     top: 0px;
     margin-top: 2px;
+}
+
+.hero .qualified-Cont .leftQ-Con .mob-h5 {
+    display: none !important;
 }
 
 .hero .qualified-Cont .leftQ-Con ul li span {
@@ -345,6 +328,20 @@
     color: #4D4D4D;
 }
 
+#hero .qualified-Cont .rightQ-Con .image-home img.home-mobile {
+    display: none;
+}
+
+.hero .qualified-Cont .leftQ-Con h1 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 66px;
+    color: #1B8E93;
+}
+
+
 .qualified-buttons {
     margin-top: 15px;
 }
@@ -354,26 +351,17 @@
     padding: 0;
 }
 
-/* .rightQ-Con .image-home {
-    background-image: url(images/home.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    height: 550px;
-    filter: drop-shadow(-25px -25px 106px rgba(27, 142, 147, 0.2));
-    margin: 0;
-    padding: 0;
-} */
 .rightQ-Con .image-home .home-img {
-
-    /* border: 1px solid rgba(27, 142, 147, 0.5); */
     filter: drop-shadow(-25px -25px 106px rgba(27, 142, 147, 0.25));
-    /* border-radius: 500px 0px 0px 3px; */
 }
 
 /* 2. homePage-Expert Quality Container */
 
+.first-sec {
+    position: relative;
+    top: 73px;
+    margin-bottom: 150px;
+}
 .expert-quality-Sec {
     margin-top: 50px;
 }
@@ -388,7 +376,6 @@
     filter: drop-shadow(10px 10px 60px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
 }
-
 
 .expert-quality-Con .expert-Title h3 {
     font-family: 'Outfit';
@@ -433,10 +420,11 @@
     font-size: 18px;
     line-height: 23px;
     color: rgba(77, 77, 77, 0.8);
-    /* margin-bottom: 0rem !important; */
 }
 
-
+.expert-quality-Con .row .expertT {
+    padding: 0px 47px;
+}
 
 /* 3. homePage-Help Section  */
 
@@ -505,14 +493,9 @@
 }
 
 .help-Sec .help-btn:hover {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 34px;
-    gap: 8px;
-    width: 163px;
-    height: 41px;
+    transition-duration: 300ms;
+    transition: ease-out;
+    color: #FFFFFF;
     background: #4D4D4D;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
@@ -577,17 +560,6 @@
     text-decoration: none;
     color: #FFFFFF;
 }
-
-/* .different-Con .row .diff-Con-Two img {
-    width: 50px;
-    height: 40px;
-    margin-top: 6px;
-} */
-
-/* .different-Con .row .diff-Con-Two .bespke-logo {
-    width: 58px;
-    height: 48px;
-} */
 
 .different-Con .row .diff-Con-Two h6 {
     width: 172px;
@@ -676,7 +648,6 @@
     color: #4D4D4D;
 }
 
-
 .bussiness-Con .bussiness-button {
     display: flex;
     justify-content: center;
@@ -708,7 +679,6 @@
     width: 115px;
     height: 21px;
 }
-
 
 
 /* 6. homePage-Choose Section */
@@ -743,8 +713,6 @@
     color: #1B8E93;
     font-weight: bold;
     display: inline-block;
-    /* width: 15px;
-    font-size: 24px; */
     width: 15px;
     font-size: 28px;
 }
@@ -833,8 +801,6 @@
 }
 
 
-
-
 /*2. AboutPage  */
 
 /* 1. aboutPage-Get-to-konow-Leads Section*/
@@ -842,19 +808,22 @@
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 52px !important;
+    line-height: 55px !important;
     color: #4D4D4D;
     position: relative;
     top: 0px;
+}
+.hero .about-Con .left-about-Con h1.about-mobile-text {
+    display: none !important;
 }
 
 .hero .about-Con .left-about-Con h5 {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 500;
-    font-size: 19px;
-    line-height: 27px;
+    font-size: 24px;
+    line-height: 30px;
     position: relative;
     top: 0px !important;
     color: rgba(77, 77, 77, 0.75);
@@ -869,7 +838,8 @@
 /* 2. aboutPage-Guninue-Sec */
 .genuine-Sec {
     position: relative;
-    margin-top: 115px;
+    margin-top: 150px;
+    /* margin-bottom: 160px; */
 }
 
 .genuine-Con .expert-quality .expertA p {
@@ -892,10 +862,16 @@
     color: rgba(77, 77, 77, 0.8);
 }
 
+.genuine-Con .expert-quality .quotedA {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
 /* 3. aboutPage-Industries Section  */
 .industries-Sec {
     position: relative;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .industries-Con .row .Industries-title h6 {
@@ -925,16 +901,6 @@
     color: #4D4D4D;
 }
 
-.industries-btn a {
-    width: 183px;
-    height: 41px;
-}
-
-.industries-btn a span {
-    width: 115px;
-    height: 21px;
-}
-
 .industries-Con .row .Industries-Features .Industries-F p {
     font-family: 'Outfit';
     font-style: normal;
@@ -944,22 +910,18 @@
     color: rgba(77, 77, 77, 0.8);
 }
 
-/* 5. aboutPage-customer-Section */
-
-.about-Con .right-about-Con .image-about {
-    background-image: url(images/about.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: inherit;
-    width: 100%;
-    height: 520px;
-    filter: drop-shadow(-25px -25px 106px rgba(27, 142, 147, 0.2));
-    border-radius: 402px 0px 0px 3px;
-    margin: 0;
-    padding: 0;
+.industries-btn-b {
+    display: none !important;
 }
 
+
+/* 5. aboutPage-customer-Section */
+
 .customer-Sec h2 {
+    width: 761px;
+    height: 106px;
+    margin: auto;
+    margin-bottom: 100px;
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
@@ -979,7 +941,7 @@
 .customer-Sec .customer-body .customer-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 302px;
     height: 307px;
@@ -1014,19 +976,17 @@
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    position: relative;
-    top: 33px;
+    width: 262px;
+    height: 72px;
     color: rgba(77, 77, 77, 0.8);
 }
+
 
 
 
 /* Service-Page */
 
 /* 2. service-Page leads Section */
-.about-Con .right-about-Con .image-service {
-    background-image: url(images/services.png);
-}
 
 .leads-Sec {
     margin-top: 100px;
@@ -1050,9 +1010,17 @@
     color: rgba(77, 77, 77, 0.8);
 }
 
+.leads-main-Sec .leads-Con-body .leads-Con_One .lead-p-mob {
+    display: none !important;
+}
+
 .leads-Sec .row .leads-Con ul li {
     display: flex;
     align-items: center;
+}
+
+.leads-Sec .row .leads-Con ul li a {
+    display: contents;
 }
 
 .leads-Sec .row .leads-Con ul li p {
@@ -1069,29 +1037,40 @@
     margin-right: 20px;
     margin-bottom: 0px;
     transition: 0.2s linear;
-}
-
-.leads-Sec .row .leads-Con ul li p:hover {
-    color: #1B8E93 !important;
-    margin-right: 25px !important;
-}
-
-.leads-Sec .row .leads-Con ul li a {
     text-decoration: none;
 }
 
-.leads-Sec .row .leads-Con ul li a:hover {
+.leads-Sec .row .leads-Con ul li a p:hover {
     color: #1B8E93 !important;
+    margin-right: 25px !important;
+    font-weight: 500;
 }
 
-.leads-Sec .row .leads-Con ul li i:hover {
+.leads-Sec .row .leads-Con ul li a p:hover .right {
     color: #1B8E93 !important;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.leads-Sec .row .leads-Con ul li a .right:hover .lis {
+    color: #1B8E93 !important;
+    font-size: 22px;
+
+}
+
+.leads-Sec .row .leads-Con ul li:hover .right {
+    color: #1B8E93 !important;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.leads-Sec .row .leads-Con ul li a i:hover {
     margin-left: 5px !important;
 }
 
-.leads-Sec .row .leads-Con ul li:hover {
-    color: #1B8E93 !important;
-
+.leads-Sec .row .leads-Con ul li {
+    cursor: pointer;
 }
 
 .leads-Sec .row .leads-Con ul li::before {
@@ -1106,11 +1085,11 @@
 .leads-Sec .row .leads-Con ul li i {
     margin-top: 15px;
     transition: 0.2s linear;
+
 }
 
 
-
-/* mortgage -service Page  */
+/* mortgage_service Page  */
 
 .breadCrumb-Sec {
     margin-top: 140px;
@@ -1164,6 +1143,9 @@
     line-height: 30px;
     color: rgba(77, 77, 77, 0.9);
     padding-top: 15px;
+    width: 628px;
+    height: 60px;
+    margin-bottom: 30px;
 }
 
 .mortage-Sec .mortage-Con .mortage-title p {
@@ -1196,11 +1178,88 @@
 
 
 
+/* Blog-homepage Page */
+.breadCrumbBlog-Sec {
+    margin-top: 140px;
+}
+
+.breadCrumb-Sec .breadCrumb-Con nav ol li span {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4D4D4D;
+}
+
+.blogPage-Sec {
+    position: relative;
+    top: 40px;
+}
+
+.blog-Sec-b {
+    display: none !important;
+}
+
+.blogPage-Sec .blogPage-title h6 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    color: #4D4D4D;
+}
+
+.blogPage-Sec .blogPage-title .blogImg {
+    height: 526px;
+    background: url(images/blog1.png) center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    filter: drop-shadow(12px 12px 50px rgba(27, 142, 147, 0.25));
+}
+
+.blogPage-Sec .blogPage-title p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    color: rgba(77, 77, 77, 0.8);
+    margin-top: 50px;
+}
+
+.blogPage-Sec .blogPage-body h6 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: justify;
+    color: #4D4D4D;
+
+}
+
+.blogPage-Sec .blogPage-body .blogOne-article ol li p,
+.blogPage-body p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    color: rgba(77, 77, 77, 0.8);
+}
+
+
+
 /* ContactPage */
 
 /* 2. ContactForm Section */
-.about-Con .right-about-Con .image-contact {
-    background-image: url(images/contact.png);
+
+.contact-Con .left-contact h1 {
+    color: #4D4D4D !important;
 }
 
 .contactForm .label {
@@ -1219,17 +1278,22 @@
     color: rgba(77, 77, 77, 0.8);
 }
 
+.contactForm .row .contact-form {
+    width: 85% !important;
+}
+
 .contact-Con p {
     margin-bottom: 0.5rem !important;
 }
 
 .contact-Con p i {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 .contact-Con p .fa {
-    font-size: 15px;
+    font-size: 18px;
+    text-align: center;
 }
 
 .contactForm button {
@@ -1306,91 +1370,25 @@ textarea {
 }
 
 
-
-/* Blog-homepage Page */
-.breadCrumbBlog-Sec {
-    margin-top: 140px;
-}
-
-.breadCrumb-Sec .breadCrumb-Con nav ol li span {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: #4D4D4D;
-}
-
-.blogPage-Sec {
-    position: relative;
-    top: 40px;
-}
-
-.blog-Sec-b {
-    display: none !important;
-}
-
-.blogPage-Sec .blogPage-title h6 {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 38px;
-    color: #4D4D4D;
-}
-
-.blogPage-Sec .blogPage-title .blogImg {
-    height: 450px;
-    background: url(images/blog1.png) center center;
-    background-size: cover;
-    border-radius: 20px;
-    filter: drop-shadow(12px 12px 50px rgba(27, 142, 147, 0.25));
-}
-
-.blogPage-Sec .blogPage-title p {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: justify;
-    color: rgba(77, 77, 77, 0.8);
-    margin-top: 50px;
-}
-
-.blogPage-Sec .blogPage-body h6 {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 28px;
-    text-align: justify;
-    color: #4D4D4D;
-
-}
-
-.blogPage-Sec .blogPage-body .blogOne-article ol li p,
-.blogPage-body p {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: justify;
-    color: rgba(77, 77, 77, 0.8);
-}
-
-
-
-
 /* Login Page */
-
-.img {
-    background-size: cover;
+.img-signin {
+    background-image: url(images/login-bg.png);
+    height: 100vh !important;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: center center;
     width: 100%;
-    height: 100%;
+    background-size: cover;
 }
+
+
+.login-Sec .half .row,
+.signup-Con .half .row{
+    height: -webkit-fill-available;
+}
+.form-group {
+    width: -webkit-fill-available;
+}
+
 
 .login-Sec .half .row .login-form {
     display: flex;
@@ -1401,9 +1399,12 @@ textarea {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     padding: 30px;
-    margin-top: 70px;
     width: 510px;
     height: 634.97px;
+}
+
+.login-Sec .half .row .login-form .login-logo {
+    padding-top: 30px;
 }
 
 .login-Sec .form-body .form-T .remember-password {
@@ -1437,10 +1438,6 @@ textarea {
     background: #F8F8F8;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
-}
-
-.form-group {
-    width: -webkit-fill-available;
 }
 
 .form-T .form-group input {
@@ -1627,25 +1624,28 @@ input {
 }
 
 
-/* SignUp Page*/
+ /* SignUp Page*/
 
-.signup-Con .container>.row {
-    height: 903.97px;
-    position: relative;
-    top: 88px;
+.img-signup {
+    background-image: url(images/signUp-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
 }
 
 .form-body-Signup {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 628px;
     height: 903.97px;
     padding: 30px;
     background: #F8F8F8;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    margin-top: 80px;
 }
 
 
@@ -1706,7 +1706,6 @@ input {
     border-radius: 4px;
     height: 44px;
     margin-top: 4px;
-    /* background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>"); */
     background-image: url(images/Polygon.png);
     background-repeat: no-repeat;
     background-position-x: 94%;
@@ -1742,36 +1741,43 @@ input {
 
 
 
-/* homepage */
-#hero .qualified-Cont .rightQ-Con .image-home img.home-mobile {
-    display: none;
-}
 
-.hero .qualified-Cont .leftQ-Con h1 {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 52px;
-    line-height: 66px;
-
-    /* Accent1 */
-
-    color: #1B8E93;
-}
-
-.expert-quality-Con .row .expertT {
-    padding: 0px 47px;
-}
 
 /* Media Queries */
+@media (max-width: 1881px) {
+    .img-signup {
+        background-image: url(images/signUp-bg.png);
+        height: 1080px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .signup-Con .container-fluid>.row {
+        height: 903.97px;
+        position: relative;
+        top: 88px;
+    }
+}
+
 @media only screen and (min-width: 1350px) and (max-width: 1920px) {
+    .hero .qualified-Cont .left-contact h5 {
+        font-size: 24px !important;
+        line-height: 30px !important;
+        margin-bottom: 25px;
+    }
+
     .rightQ-Con .image-home .home-img {
         width: 90%;
         float: right;
         height: 690px;
-        /* border: 1px solid rgba(27, 142, 147, 0.5); */
-        /* filter: drop-shadow(-25px -25px 106px rgba(27, 142, 147, 0.25)); */
-        /* border-radius: 500px 0px 0px 3px; */
+    }
+
+    .genuine-Con .expert-quality .quotedA {
+        width: 1062px;
+        height: 138px;
+        margin: auto;
     }
 
     .first-sec .qualified-fluid {
@@ -1780,6 +1786,11 @@ input {
 
     .qualified-Cont .blank-Q-left {
         width: 16% !important;
+    }
+
+    .rightQ-Con .image-home .about-img {
+        height: 526px;
+        width: 100%;
     }
 
     .qualified-Cont .leftQ-Con {
@@ -1829,6 +1840,8 @@ input {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1650px) {
+
+    /* help-Sec */
     .help-Sec .help-Con {
         width: 86% !important;
     }
@@ -1840,11 +1853,8 @@ input {
 }
 
 @media only screen and (min-width: 1350px) and (max-width: 1650px) {
-    .rightQ-Con .image-home .home-img {
-        width: 90%;
-        float: right;
-        height: 690px;
-    }
+
+    /* homePage-Qualified Leads Section */
 
     .qualified-Cont .blank-Q-left {
         width: 8.333333% !important;
@@ -1858,22 +1868,37 @@ input {
         width: 58.333333% !important;
     }
 
+    .rightQ-Con .image-home .home-img {
+        width: 90%;
+        float: right;
+        height: 690px;
+    }
+
+
 }
 
-
 @media (max-width: 1400px) {
+
+    /* homePage-Bussiness Section */
     .choose-main-Con .row .choose-Con ul li span {
         font-size: 16px;
     }
 }
 
 @media only screen and (min-width: 1206px) and (max-width: 1349px) {
-    .rightQ-Con .image-home .home-img {
-        width: 100%;
-        /* float: right; */
-        height: 690px;
+
+    /* aboutPage-Guninue-Sec */
+    .genuine-Con .expert-quality .quotedA {
+        width: 1062px;
+        height: 138px;
+        margin: auto;
     }
 
+    /* homePage-Qualified Leads Section */
+    .rightQ-Con .image-home .home-img {
+        width: 100%;
+        height: 690px;
+    }
 
     .hero .qualified-Cont .leftQ-Con h1 {
         font-size: 40px;
@@ -1900,19 +1925,7 @@ input {
         gap: 10px;
     }
 
-    .started-btn a {
-        /* width: 169px; */
-        /* height: 38px; */
-        /* font-size: 12px; */
-        /* line-height: 20px; */
-    }
-
-    .learn-white-btn a {
-        /* width: 143px; */
-        /* height: 38px; */
-        /* font-size: 12px; */
-        /* line-height: 20px; */
-    }
+    /* help Section */
 
     .help-Sec .help-buttons {
         padding-left: 105px;
@@ -1927,45 +1940,14 @@ input {
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1206px) {
+
+    /* homePage-Choose Section */
+
     .choose-main-Con .row .choose-Con ul li span {
         font-size: 13px;
     }
 
-    .rightQ-Con .image-home .home-img {
-        width: 100%;
-        height: 690px;
-        /* border: 1px solid rgba(27, 142, 147, 0.5); */
-        /* filter: drop-shadow(-25px -25px 106px rgba(27, 142, 147, 0.25)); */
-        /* border-radius: 500px 0px 0px 3px; */
-    }
-
-    .expert-quality-Con .row .expertT h3 {
-        width: auto;
-        height: auto;
-        font-size: 26px;
-        line-height: 37px;
-
-    }
-
-    .help-Sec h3,
-    .help-Sec p {
-        margin-left: 0px;
-    }
-
-    .blogs-Card .card-slide .blogCard-text h6 {
-        width: auto;
-        height: auto;
-    }
-
-    .expert-quality-Con .row .expertT p {
-        height: auto;
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .blogs-Card .card-slide .blogCard-text h6 {
-        width: auto;
-    }
+    /* homePage-Qualified Leads Section  */
 
     .qualified-Cont .blank-Q-left {
         width: 4.333333% !important;
@@ -1987,15 +1969,49 @@ input {
         margin-bottom: 47px;
     }
 
-    /* .navbar-Sec .cusnavbar{
-        width: 104% !important;
-    } */
-    /* .rightQ-Con .image-home .home-img{
-        width: 107%;
-    } */
+    .rightQ-Con .image-home .home-img {
+        width: 100%;
+        height: 690px;
+    }
+
+    /* homePage-Expert Quality Section */
+
+    .expert-quality-Con .row .expertT h3 {
+        width: auto;
+        height: auto;
+        font-size: 26px;
+        line-height: 37px;
+    }
+    
+    .expert-quality-Con .row .expertT p {
+        height: auto;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /* help Section */
+
+    .help-Sec h3,
+    .help-Sec p {
+        margin-left: 0px;
+    }
+
+    /* homePage-blog Section */
+
+    .blogs-Card .card-slide .blogCard-text h6 {
+        width: auto;
+        height: auto;
+    }
+
+    .blogs-Card .card-slide .blogCard-text h6 {
+        width: auto;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* footer Section */
 
     .footer-con .footer-body .row {
         text-align: initial;
@@ -2012,84 +2028,6 @@ input {
 }
 
 @media (max-width: 992px) {
-    .help-Sec {
-        padding: 0px;
-        margin-top: 0px;
-    }
-
-    .choose-main-Con .row .choose-Con ul li {
-        width: 250px;
-    }
-
-    .choose-main-Con .choose-Con-body .ord-Two,
-    .choose-main-Con .choose-Con-body .ord-Three {
-        padding-left: 0px;
-    }
-
-    .choose-main-Con .row .choose-learn-btn-b-col {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .different-Sec .diff-learn-Button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* padding-left: 0px !important; */
-        margin-top: 5px;
-    }
-
-    .bussiness-Sec .bussiness-Con .bussiness-body-row {
-        padding: 0px 0px;
-    }
-
-    .bussiness-Con .bussiness-body .bussiness-features p {
-        font-size: 11px;
-
-    }
-
-    .different-Sec .diff-learn-btn-b {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        /* margin-top: 20px !important; */
-        /* border-bottom: 1px solid #1B8E9340 !important; */
-        /* padding-bottom: 50px; */
-    }
-
-    .mob-border-diff {
-        border-bottom: 1px solid #1B8E9340 !important;
-    }
-
-    .different-Con .row .diff-learn-btn-a {
-        display: none !important;
-    }
-
-    .choose-Sec .choose-learn-btn-a {
-        display: none !important;
-    }
-
-    .choose-Sec .choose-learn-btn-b {
-        display: flex !important;
-        /* justify-content: center; */
-        /* align-items: center; */
-    }
-
-    .rightQ-Con .image-home .home-img {
-        display: none;
-    }
-
-    .rightQ-Con .image-home .home-mobile {
-        display: block !important;
-        background-repeat: no-repeat;
-        background-position: inherit;
-        background-size: contain;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
 
     /* Navbar */
     .cusnavbar .container .navbar-collapse ul {
@@ -2115,7 +2053,6 @@ input {
         top: 57px;
         background-color: white;
         width: 100%;
-        /* transition: 0.3s linear; */
     }
 
     .cusnavbar .container .user2 {
@@ -2143,11 +2080,6 @@ input {
         font-weight: 900;
     }
 
-    .first-sec {
-        position: relative;
-        top: 57px;
-        margin-bottom: 180px;
-    }
 
     /* Footer */
     .footer-section .footer-con .footer-body .row .company-contact img {
@@ -2163,7 +2095,6 @@ input {
         background-size: contain;
         max-width: fit-content;
     }
-
 
     .help-Sec h3,
     .help-Sec p {
@@ -2182,6 +2113,10 @@ input {
         padding-left: 0px !important;
     }
 
+    .help-Sec {
+        padding: 0px;
+        margin-top: 30px;
+    }
 
     /* 1. homePage-Qualified Leads Section */
 
@@ -2192,6 +2127,10 @@ input {
         font-size: 32px;
         line-height: 40px;
         color: #1B8E93;
+        position: relative;
+        right: 60px;
+        font-size: 45px;
+        line-height: 55px;
     }
 
     .qualified-Cont .leftQ-Con {
@@ -2203,13 +2142,9 @@ input {
         left: 143px;
     }
 
-    .hero .qualified-Cont .leftQ-Con h1 {
-        position: relative;
-        right: 60px;
-        font-size: 45px;
-        line-height: 55px;
+    .hero .qualified-Cont .left-about-Con h1 {
+        right: 0px;
     }
-
 
     .hero .qualified-Cont .leftQ-Con .qualified {
         width: 500px;
@@ -2228,6 +2163,26 @@ input {
 
     .hero .qualified-Cont .leftQ-Con h5 {
         margin-top: 50px;
+    }
+    .first-sec {
+        position: relative;
+        top: 57px;
+        margin-bottom: 180px;
+    }
+
+    .rightQ-Con .image-home .home-img {
+        display: none;
+    }
+
+    .rightQ-Con .image-home .home-mobile {
+        display: block !important;
+        background-repeat: no-repeat;
+        background-position: inherit;
+        background-size: contain;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
     }
 
 
@@ -2272,7 +2227,38 @@ input {
         justify-content: center;
         align-items: center;
     }
+    
+    .different-Sec .diff-learn-Button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    
+    .different-Sec .diff-learn-btn-b {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .mob-border-diff {
+        border-bottom: 1px solid #1B8E9340 !important;
+    }
+
+    .different-Con .row .diff-learn-btn-a {
+        display: none !important;
+    }
+
+    /* 5. homePage-Bussiness Section */
+
+    .bussiness-Sec .bussiness-Con .bussiness-body-row {
+        padding: 0px 0px;
+    }
+
+    .bussiness-Con .bussiness-body .bussiness-features p {
+        font-size: 11px;
+
+    }
 
     /* 6.  homePage-Choose Section */
     .choose-Con_One {
@@ -2311,6 +2297,28 @@ input {
         order: 3;
         padding-bottom: 30px;
     }
+    .choose-main-Con .row .choose-Con ul li {
+        width: 250px;
+    }
+
+    .choose-main-Con .choose-Con-body .ord-Two,
+    .choose-main-Con .choose-Con-body .ord-Three {
+        padding-left: 0px;
+    }
+
+    .choose-main-Con .row .choose-learn-btn-b-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choose-Sec .choose-learn-btn-a {
+        display: none !important;
+    }
+
+    .choose-Sec .choose-learn-btn-b {
+        display: flex !important;
+    }
 
     /* 7. homePage-blog Section */
     .blogs-Card .card-slide .blogCard-text h6 {
@@ -2337,6 +2345,7 @@ input {
 
     /* About Page */
 
+    /* 1. aboutPage-getToKnow- Section */
     .about-Con .right-about-Con .image-about {
         border: none;
         filter: none;
@@ -2349,23 +2358,43 @@ input {
     }
 
     .hero .about-Con .left-about-Con h5 {
-        margin-top: 35px;
+        margin-top: 15px;
         text-align: center;
     }
+    
+    .about-Con .right-about-Con .image-contact {
+        border: none;
+        filter: none;
+        border-radius: inherit;
+        width: auto;
+    }
+
 
     .hero .about-Con .left-about-Con .qualified-buttons {
         bottom: 0px !important;
     }
 
+    /*5. aboutPage-customer-Section */
+
+    .customer-Sec h2 {
+        width: auto;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
 
     /* Services Page */
+    .leads-Sec {
+        margin-bottom: 50px;
+    }
+
     .leads-Con ul {
         width: auto;
         margin: auto;
     }
 
 
-    /* COntact-page */
+    /* Contact-page */
     .contact-Con p {
         display: flex;
         justify-content: center;
@@ -2390,26 +2419,14 @@ input {
         order: 3;
     }
 
-    .about-Con .right-about-Con .image-contact {
-        border: none;
-        filter: none;
-        border-radius: inherit;
-        width: auto;
-    }
-
 }
 
 @media (max-width: 768px) {
-    .help-Sec .help-btn {
-        width: 149px;
-        height: 38px;
-    }
 
-    .help-Sec .help-btn a {
-        width: 81px;
-        height: 18px;
-        font-size: 12px;
-        line-height: 18px;
+    /* Mortage Section */
+    .mortage-Sec .mortage-Con .mortage-title h6 {
+        width: auto;
+        height: auto;
     }
 
     /* footer */
@@ -2458,6 +2475,12 @@ input {
 
     /* Help-Sec*/
 
+    .help-Sec .help-btn a {
+        width: 81px;
+        height: 18px;
+        font-size: 12px;
+        line-height: 18px;
+    }
 
     .help-Sec p {
         width: auto;
@@ -2479,24 +2502,27 @@ input {
         font-size: 27px;
     }
 
+    /* 5. homePage-Bussiness Section */
+
     .bussiness-Con .bussiness-body .bussiness-features p {
         font-size: 14px;
 
     }
 
+    /* homePage-Qualified Leads Section */
+
+    .hero .qualified-Cont .leftQ-Con .qualified {
+        top: 320px;
+    }
+    
     .rightQ-Con .image-home {
         background-image: url(images/home-Mobile.png);
         background-repeat: no-repeat;
         background-position: inherit;
         background-size: contain;
         width: 100%;
-        /* height: 640px; */
         margin: 0;
         padding: 0;
-    }
-
-    .hero .qualified-Cont .leftQ-Con .qualified {
-        top: 320px;
     }
 
     .leftQ-Con .leftQ-p {
@@ -2534,7 +2560,7 @@ input {
 
 
 
-    /* COntact-Page */
+    /* Contact-Page */
 
     #contactForm .form-groupC input,
     textarea,
@@ -2544,21 +2570,17 @@ input {
 
 
     /* SignUp Page*/
-    .form-group-Signup {
-        width: -webkit-fill-available;
-    }
 
+    .form-group-Signup,
     .signupForm .row .form-group input {
         width: -webkit-fill-available !important;
     }
-
+    .form-group {
+        width: -webkit-fill-available;
+    }
     .form-body-Signup {
         width: 95%;
         height: 1420px !important;
-    }
-
-    .img {
-        height: 1600px !important;
     }
 
     .signupForm .row .col-md-12 {
@@ -2566,21 +2588,25 @@ input {
         justify-content: center;
         align-items: center;
     }
+    
+    .img-signup {
+        background-image: url(images/Signup-Mobile.png);
+        height: 1600px !important;
+    }
 
 
     /* SignIn page */
     .img-signin {
         background-image: url(images/Login-Mobile.png) !important;
-        height: 796px !important;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
 
 }
 
 @media (max-width: 630px) {
+
+     /* homePage-Qualified Leads Section */
+
     .hero .qualified-Cont .leftQ-Con .qualified {
         top: 220px;
     }
@@ -2594,6 +2620,12 @@ input {
         font-size: 32px;
         line-height: 40px;
         right: 43px;
+    }
+
+    .hero .qualified-Cont .left-about-Con h1 {
+        font-size: 32px;
+        line-height: 40px;
+        right: 0px;
     }
 
     .hero .qualified-Cont .leftQ-Con .qualified {
@@ -2638,6 +2670,16 @@ input {
         text-align: center;
     }
 
+    /* 2. homePage-Expert Quality Section */
+
+    .expert-quality-Con .quality-card {
+        margin-top: 8px;
+    }
+
+    .expert-quality-Con .row .expertT {
+        margin-bottom: 60px;
+    }
+
     /* 7. homePage-blog Section */
     .blogs-Card .card-slide .blogCard-text h6 {
         font-size: 14px;
@@ -2660,32 +2702,16 @@ input {
     /* About page */
 
 
-    .hero .about-Con .left-about-Con h1 {
-        position: absolute;
-        top: 295px;
-        left: -1px;
-        font-family: 'Outfit';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 45;
-        line-height: 75px;
-        background: rgba(255, 255, 255, 0.75);
-        border-radius: 0px 6px 6px 0px;
-        width: 350px;
-        height: 170px;
-    }
-
-    .about-Con .right-about-Con .image-about {
-        background-image: url(images/about-Mobile.png);
-        background-repeat: no-repeat;
-        background-position: cover;
-        background-size: cover;
-        width: 100%;
-        height: 467px;
-    }
-
     /* 3. aboutPage-Industries Section */
 
+    .industries-Con .row .Industries-title h6,
+    .industries-Con .row .Industries-title p {
+        text-align: center;
+    }
+
+    .industries-btn {
+        margin: auto;
+    }
 
     .industries-btn {
         align-items: center;
@@ -2715,17 +2741,19 @@ input {
         margin-top: 20px;
     }
 
-
+    /* servicesPage-Services-provide- Section */
     .about-Con .right-about-Con .image-service {
         background-image: url(images/service-Mobile.png);
         border: none;
         filter: none;
         border-radius: inherit;
     }
-
+    /* 2. service-Page leads Section */
     .leads-Sec .row .leads-Con ul li p {
         text-align: start !important;
     }
+
+    /* 1. contactPage-Services-provide- Section */
 
     .about-Con .right-about-Con .image-contact {
         background-image: url(images/contact-Mobile.png);
@@ -2734,195 +2762,27 @@ input {
         border-radius: inherit;
     }
 
+    /* login Page */
     .login-Sec .half .row .login-form {
         width: 95%;
     }
 
-    .login-Sec .half .row .login-form .form-T {
+    .login-Sec .half .row .login-form .form-T ,
+    .login-Sec .half .row .login-form .form-T .form-group input{
         width: -webkit-fill-available !important;
-    }
-
-    .login-Sec .half .row .login-form .form-T .form-group input {
-        width: -webkit-fill-available !important;
-    }
-
-    .expert-quality-Con .quality-card {
-        margin-top: 8px;
-    }
-
-    .expert-quality-Con .row .expertT {
-        margin-bottom: 60px;
     }
 
 }
 
-
-@media only screen and (min-width: 300px) and (max-width: 480px) {
-    .first-sec .qualified-fluid .qualified-Cont {
-        margin: 0px !important;
-    }
-
-    .different-Con .row .diff-Con-Two .diff-Two img {
-        margin-bottom: auto;
-        margin-right: 10px;
-    }
-
-    .footer-section .footer-con .footer-body .row .follow {
-        margin-bottom: 18px !important;
-    }
-
-    .blog-Sec .blog-Con .blog-T h3 {
-        text-align: initial !important;
-    }
-
-    .blog-Sec .blog-Con .blog-T {
-        margin-bottom: 20px !important;
-    }
-
-    .blogs-Card .card-slide .blogCard-text h6,
-    .blogs-Card .card-slide .blogCard-text p {
-        padding: 0px 15px !important;
-    }
-
-    .bussiness-Con .expand-reach-m {
-        margin-top: 25px !important;
-    }
-
-    .bussiness-Con .self-schedule-m {
-        margin-top: 0px !important;
-    }
-
-    .bussiness-Con .bussiness-body .bussiness-features .expand-reach-mob,
-    .bussiness-Con .bussiness-body .bussiness-features .self-sehedule-mob {
-        display: block;
-        margin-bottom: 15px !important;
-    }
-
-    .bussiness-Con .bussiness-body .bussiness-features .expand-reach,
-    .bussiness-Con .bussiness-body .bussiness-features .self-sehedule {
-        display: none !important;
-    }
-
-    .bussiness-Con .bussiness-Title {
-        margin-bottom: 0px !important;
-    }
-
-    .choose-Sec {
-        margin-top: 60px;
-    }
-
-    .choose-main-Con .row .choose-Con ul li span {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .choose-main-Con .row .choose-Con ul {
-        /* width: auto; */
-        padding-left: 12px;
-    }
-
-    .bussiness-Sec .row h4 {
-        font-size: 22px;
-        line-height: 28px;
-    }
-
-    .bussiness-Con .bussiness-footer .bussiness-footerT h6 {
-        font-size: 16px;
-        line-height: 20px;
-        width: 361px;
-        height: 60px;
-    }
-
-    .bussiness-Con .bussiness-button .started-btn a {
-        /* width: 169px; */
-        /* height: 38px; */
-        /* font-size: 12px; */
-        /* line-height: 18px; */
-    }
-
-    .blog-Sec-b {
-        display: flex !important;
-    }
-
-    .blog-Sec-a {
-        display: none;
-    }
-
-    .blogs-Card .card-slide .blogCard-text a {
-        text-decoration: none;
-    }
-
-    /* 1. homePage-Qualified Leads Section */
-    .hero .qualified-Cont .leftQ-Con .qualified {
-        width: 330px !important;
-        height: 170px;
-    }
-
-    .hero .qualified-Cont .leftQ-Con .qualified {
-        width: 356px !important;
-        height: 176px !important;
-        /* top: 100px; */
-    }
-
-    /* 
-    .rightQ-Con .image-home {
-        height: 317px;
-    } */
-
-    .hero .qualified-Cont .leftQ-Con .qualified .img-24by7 {
-        margin-left: 160px;
-        margin-bottom: 37px;
-    }
-
-    .first-sec {
-        margin-bottom: 115px;
-    }
-
-    .help-Sec .row {
-        padding: 55px 0px;
-    }
-
-    .hero .qualified-Cont .leftQ-Con ul {
-        width: 318px;
-        height: 108px;
-    }
-
-    .hero .qualified-Cont .leftQ-Con ul li {
-        margin-left: 0px !important;
-    }
-
-    .expert-quality-Con .row .expertT {
-        margin-bottom: 0px;
-        padding-top: 0.5rem !important;
-    }
-
-    .hero .qualified-Cont .leftQ-Con h5 {
-        line-height: 20px;
-    }
-
-    .hero .qualified-Cont .leftQ-Con img {
-        left: 68px !important;
-    }
-
-    /* .hero .qualified-Cont .leftQ-Con ul {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-        gap: 15px;
-    } */
-
-
-    .hero .qualified-Cont .leftQ-Con ul li span {
-        margin-right: 0px;
-        font-size: 14px
-    }
-
+@media only screen and (min-width: 250px) and (max-width: 480px) {
+    
+    /* buttons */
     .started-btn {
-        padding: 10px 34px;
-        width: 168px;
+        padding: 10px 30px;
+        width: 159px;
         height: 38px;
+        font-size: 12px !important;
+        line-height: 18px !important;
     }
 
     .learn-white-btn {
@@ -2931,66 +2791,31 @@ input {
         height: 38px;
     }
 
-    .learn-white-btn a,
+    .learn-wh-btn a,
     .learn-btn a {
-        width: 67px;
-        height: 18px;
         font-size: 12px;
         line-height: 18px;
-    }
-
-    .started-btn a {
-        width: 99px;
-        height: 18px;
-        line-height: 18px;
-        font-size: 12px
     }
 
     .learn-btn {
         width: 135px;
         height: 38px;
+        font-size: 12px !important;
+        line-height: 18px !important;
     }
 
+    /* help section */
 
-
-
-    /* 2. homePage-Expert Quality Section */
-    .expert-quality-Con .expert-Title h3 {
-        line-height: 40px;
-        font-size: 32px;
-    }
-
-    .hero .qualified-Cont .leftQ-Con ul li img {
-        width: 14px;
-        height: 14px;
-        margin-top: 4px;
-    }
-
-    .expert-quality-Con .expert-Title p {
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .expert-quality-Con .row .expertT h3 {
-        font-size: 22px;
-        line-height: 28px;
-        width: 302px;
-        height: 28px;
-        padding-left: initial;
-        text-align: center;
-    }
-
-    .expert-quality-Con .row .expertT p {
-        font-size: 14px;
+    .help-Sec .help-btn {
+        width: 149px;
+        height: 38px;
+        font-size: 12px;
         line-height: 18px;
-        width: 361px;
-        height: 90px;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
     }
 
-
-    /* help-Section */
+    .help-Sec .row {
+        padding: 55px 0px;
+    }
     .help-Sec h3 {
         font-size: 17px;
         line-height: 32px;
@@ -3025,34 +2850,12 @@ input {
         line-height: 18px;
     }
 
-    .different-Con .row .diff-Con_One h3 {
-        font-size: 32px;
-        line-height: 40px;
-    }
+    /* footer section */
 
-    .diff-learn-btn-b a {
-        font-size: 12px;
-        line-height: 18px;
-        width: 67px;
-        height: 18px;
+    .footer-section .footer-con .footer-body .row .follow {
+        margin-bottom: 18px !important;
     }
-
-    .bussiness-Sec {
-        margin-top: 65px;
-    }
-
-    .blog-Sec .blog-Con .blog-B .blogs-Card .card-slide {
-        width: auto;
-        height: auto;
-    }
-
-    .swiper-backface-hidden .swiper-slide-active,
-    .swiper-backface-hidden .swiper-slide-next {
-        width: 290px !important;
-        height: 314px !important;
-        margin-right: 10px !important;
-    }
-
+    
     .footer-section .footer-con .footer-body .row .company-contact .lead-footer {
         width: 173px;
         font-size: 14px;
@@ -3072,6 +2875,196 @@ input {
         margin-top: 1px;
     }
 
+
+    /* 1. homePage-Qualified Leads Section */
+
+    .hero .qualified-Cont .leftQ-Con ul li img {
+        width: 14px;
+        height: 14px;
+        margin-top: 4px;
+    }
+
+    .hero .qualified-Cont .leftQ-Con .tab-h5 {
+        display: none !important;
+    }
+
+    .hero .qualified-Cont .leftQ-Con .mob-h5 {
+        display: block !important;
+        width: 302px !important;
+        margin-right: 0px !important;
+    }
+
+    .hero .qualified-Cont .leftQ-Con .qualified {
+        width: 330px !important;
+        height: 170px;
+    }
+    
+    .first-sec .qualified-fluid .qualified-Cont {
+        margin: 0px !important;
+    }
+
+    .hero .qualified-Cont .leftQ-Con .qualified {
+        width: 356px !important;
+        height: 176px !important;
+    }
+
+    .hero .qualified-Cont .leftQ-Con .qualified .img-24by7 {
+        margin-left: 160px;
+        margin-bottom: 37px;
+    }
+
+    .first-sec {
+        margin-bottom: 115px;
+    }
+
+    .hero .qualified-Cont .leftQ-Con ul {
+        width: 318px;
+        height: 108px;
+    }
+
+    .hero .qualified-Cont .leftQ-Con ul li {
+        margin-left: 0px !important;
+    }
+    .hero .qualified-Cont .leftQ-Con h5 {
+        line-height: 20px;
+    }
+
+    .hero .qualified-Cont .leftQ-Con img {
+        left: 68px !important;
+    }
+
+    .hero .qualified-Cont .leftQ-Con ul li span {
+        margin-right: 0px;
+        font-size: 14px
+    }
+
+    /* 2. homePage-Expert Quality Section */
+
+    .expert-quality-Con .row .expertT {
+        margin-bottom: 0px;
+        padding-top: 0.5rem !important;
+    }
+    .expert-quality-Con .expert-Title h3 {
+        line-height: 40px;
+        font-size: 32px;
+    }
+
+    .expert-quality-Con .expert-Title p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .expert-quality-Con .row .expertT h3 {
+        font-size: 22px;
+        line-height: 28px;
+        width: 302px;
+        height: 28px;
+        padding-left: initial;
+        text-align: center;
+    }
+
+    .expert-quality-Con .row .expertT p {
+        font-size: 14px;
+        line-height: 18px;
+        width: 361px;
+        height: 90px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+   
+    /* 4. homePage-What's Different Section */
+    
+    .different-Con .row .diff-Con-Two .diff-Two img {
+        margin-bottom: auto;
+        margin-right: 10px;
+    }
+    .different-Con .row .diff-Con_One h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    /* 5. homePage-Bussiness Section */
+
+    .bussiness-Sec .row h4 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .bussiness-Con .bussiness-footer .bussiness-footerT h6 {
+        font-size: 16px;
+        line-height: 20px;
+        width: 361px;
+        height: 60px;
+    }
+
+    .bussiness-Con .expand-reach-m {
+        margin-top: 25px !important;
+    }
+
+    .bussiness-Con .self-schedule-m {
+        margin-top: 0px !important;
+    }
+
+    .bussiness-Con .bussiness-body .bussiness-features .expand-reach-mob,
+    .bussiness-Con .bussiness-body .bussiness-features .self-sehedule-mob {
+        display: block;
+        margin-bottom: 15px !important;
+    }
+
+    .bussiness-Con .bussiness-body .bussiness-features .expand-reach,
+    .bussiness-Con .bussiness-body .bussiness-features .self-sehedule {
+        display: none !important;
+    }
+
+    .bussiness-Con .bussiness-Title {
+        margin-bottom: 0px !important;
+    }
+    
+    .bussiness-Sec {
+        margin-top: 65px;
+    }
+
+    /* -6.  homePage-Choose Section */
+    
+    .choose-Sec {
+        margin-top: 60px;
+    }
+
+    .choose-main-Con .row .choose-Con ul li span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .choose-main-Con .row .choose-Con ul {
+        padding-left: 12px;
+    }
+
+    /* 7. homePage-blog Section */
+
+    .blog-Sec-b {
+        display: flex !important;
+    }
+
+    .blog-Sec-a {
+        display: none;
+    }
+
+    .blogs-Card .card-slide .blogCard-text a {
+        text-decoration: none;
+    }
+    .blog-Sec .blog-Con .blog-T h3 {
+        text-align: initial !important;
+    }
+
+    .blog-Sec .blog-Con .blog-T {
+        margin-bottom: 20px !important;
+    }
+
+    .blogs-Card .card-slide .blogCard-text h6,
+    .blogs-Card .card-slide .blogCard-text p {
+        padding: 0px 15px !important;
+    }
+    
     .swiper-autoheight,
     .swiper-autoheight .swiper-slide,
     .blogs-Card .card-slide .image img {
@@ -3088,19 +3081,19 @@ input {
         line-height: 25px;
     }
 
-    /* .swiper-backface-hidden .swiper-slide-next{
-        width: 275px !important;
-        
-    } */
-
-    /* About Page */
-    .hero .about-Con .left-about-Con h1 {
-        font-size: 32px;
-        line-height: 48px;
-        /* width: auto; */
-        width: 204px;
-        height: 150px;
+    .blog-Sec .blog-Con .blog-B .blogs-Card .card-slide {
+        width: auto;
+        height: auto;
     }
+
+    .blog-Con .body-swip .previous-btn,
+    .blog-Con .body-swip .next-btn {
+        color: #F8F8F8;
+    }
+
+    
+    /* About Page */
+
 
     .hero .about-Con .left-service h1 {
         height: 104px;
@@ -3129,7 +3122,133 @@ input {
         line-height: 40px;
     }
 
+    .customer-Con .body-swip .previous-btn,
+    .customer-Con .body-swip .next-btn {
+        color: #f30d0d;
+    }
 
+    /* 3. aboutPage-Industries Section */
+    
+    .industries-Con .row .Industries-Features {
+        margin-top: 0px !important;
+    }
+
+    .industries-Con .row .Industries-Features .Industries-F {
+        width: 100% !important;
+    }
+
+    .industries-Con .row .Industries-Features .Industries-F p {
+        width: 302px;
+        height: 36px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .industries-Con .row .Industries-Features .Industries-F .connect {
+        margin-left: auto !important;
+    }
+
+    .industries-Con .row .Industries-Features .industries-border-l {
+        border-bottom: none !important;
+    }
+
+    .industries-Con .row .Industries-title h6 {
+        font-size: 32px;
+    }
+
+    .industries-Con .row .Industries-title p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .industries-btn-b {
+        display: flex !important;
+    }
+
+    .industries-btn-a {
+        display: none !important;
+    }
+
+    /* 1. aboutPage-getToKnow- Section */
+
+    .hero .about-Con .left-about-Con h1.about-mobile-text {
+        display: block !important;
+    }
+
+    .hero .about-Con .left-about-Con h5 {
+        margin-top: 10px;
+    }
+
+    .hero .about-Con .left-about-Con {
+        margin-top: 10px;
+    }
+
+    .rightQ-Con .image-home .about-mobile {
+        height: 324px;
+    }
+
+    .hero .about-Con .left-about-Con h1.about-tab-text {
+        display: none !important;
+    }
+
+    .hero .about-Con .left-about-Con h1 {
+        position: absolute;
+        top: 155px !important;
+        left: -1px;
+        padding-left: 15px;
+        padding-top: 10px;
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px !important;
+        line-height: 40px !important;
+        background: rgba(255, 255, 255, 0.75);
+        border-radius: 0px 6px 6px 0px;
+        width: 204px;
+    }
+
+    .hero .about-Con .left-about-Con h1 span.get-color {
+        color: #4D4D4D;
+    }
+
+    /* Service page */
+    
+    /* 1. servicesPage-Services-provide- Section */
+
+    .hero .services-Con .left-service h1 {
+        height: 110px !important;
+        top: 185px !important;
+    }
+    
+    /*  2. service-Page leads Section */
+    .customer-Sec-tab,
+    .leads-main-Sec .leads-Con-body .leads-Con_One .lead-p-tab {
+        display: none !important;
+    }
+
+    .leads-main-Sec .leads-Con-body .leads-Con_One .lead-p-mob {
+        display: block !important;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    /* mortage_Service page */
+
+    .mortage-Sec {
+        margin-bottom: 170px;
+    }
+
+    /* Contact page */
+
+    /* 1. contactPage-Services-provide- Section */
+    .contact-Con .left-contact h1 {
+        top: 180px !important;
+    }
+    .contactForm-Sec{
+        margin-bottom: 115px;
+    }
 
     /* SignUp page */
 
@@ -3148,22 +3267,36 @@ input {
 }
 
 @media (max-width: 450px) {
+
+    /* homePage-Qualified Leads Section */
+
     .hero .qualified-Cont .leftQ-Con .qualified {
         top: 150px;
     }
 }
 
 @media (max-width: 400px) {
+  
+    /* homePage-Qualified Leads Section */
+
     .hero .qualified-Cont .leftQ-Con .qualified {
         top: 110px;
     }
 }
 
 @media (max-width: 360px) {
+      
+    /* homePage-Qualified Leads Section */
+
     .hero .qualified-Cont .leftQ-Con .qualified {
         top: 100px;
         width: 339px !important;
         height: 171px !important;
+    }
+
+    /* signup form */
+    .form-body-Signup h5 strong {
+        font-size: 25px;
     }
 }
 
@@ -3184,6 +3317,8 @@ input {
         height: 24px;
     }
 
+    /* homePage-Qualified Leads Section */
+
     .hero .qualified-Cont .leftQ-Con .qualified {
         width: 400px;
         top: 90px;
@@ -3203,7 +3338,7 @@ input {
         top: 4px;
         right: 36px;
     }
-
+    
     .hero .qualified-Cont .leftQ-Con h5 {
         margin-right: 0px !important;
     }
@@ -3211,9 +3346,23 @@ input {
     .rightQ-Con .image-home {
         height: 265px;
     }
+
+    /* 1. aboutPage-getToKnow- Section */
+
+    .hero .about-Con .left-about-Con {
+        margin-top: 70px;
+    }
+
+    .hero .about-Con .left-about-Con h1 {
+        position: absolute;
+        top: 155px;
+    }
+
 }
 
 @media (max-width: 304px) {
+
+    /* signup page */
 
     .form-body-Signup {
         width: 95%;
@@ -3228,7 +3377,35 @@ input {
         font-size: 20px;
     }
 
+    /* navBar */
     .cusnavbar .container .gigabitesoft-logo img {
         width: 170.05px !important;
     }
 }
+
+@media only screen and (min-width: 200px) and (max-width: 299px) {
+
+    /* 1. aboutPage-getToKnow- Section */
+
+    .hero .about-Con .left-about-Con h1.about-mobile-text {
+        display: block !important;
+    }
+
+    .rightQ-Con .image-home .about-mobile {
+        height: 324px;
+    }
+
+    .hero .about-Con .left-about-Con h1.about-tab-text,
+    .leads-main-Sec .leads-Con-body .leads-Con_One .lead-p-tab {
+        display: none !important;
+    }
+
+    /* homePage-Qualified Leads Section */
+
+    .rightQ-Con .image-home .home-mobile{
+        margin-top: 40px;
+    }
+}
+
+
+/* End */

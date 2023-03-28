@@ -1,26 +1,17 @@
 
 
 
-// home page blogs slider
+// home page blogs slider & customer slider
 
-var swiper = new Swiper(".reviews-slider", {
-    loop:true,
-    spaceBetween: 20,
-    grabCursor:true,
-    autoHeight:true,
-    // pagination: {
-    //       el: ".swiper-pagination",
-    //       clickable: true,
-    //     },
-    breakpoints: {
-      640: {
-         slidesPerView: 1,
+    var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-        768: {
-          slidesPerView: 2,
+        pagination: {
+          el: ".swiper-pagination",
         },
-       1024: {
-         slidesPerView: 3,
-        },
-      },
-    });
+        mousewheel: true,
+        keyboard: true,
+      });
