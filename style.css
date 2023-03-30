@@ -922,6 +922,7 @@ html {
     font-size: 18px;
     line-height: 23px;
     color: rgba(77, 77, 77, 0.8);
+    margin-bottom: 45px !important;
 }
 
 .industries-Con .row .Industries-Features .Industries-F h6 {
@@ -1021,16 +1022,17 @@ html {
 /* 2. service-Page leads Section */
 
 .leads-Sec {
-    margin-top: 210px;
+    margin-top: 250px;
 }
 
 .leads-main-Sec .leads-Con-body .leads-Con_One h6 {
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
-    font-size: 42px;
-    line-height: 45px;
+    font-size: 42px !important;
+    line-height: 45px !important;
     color: #4D4D4D;
+    margin-bottom: 12px;
 }
 
 .leads-main-Sec .leads-Con-body .leads-Con_One p {
@@ -1290,7 +1292,8 @@ html {
 
 /* 2. ContactForm Section */
 
-.contact-Con .left-contact h1 {
+.contact-Con .left-contact h1,
+.contact-Con .left-contact h5 {
     color: #4D4D4D !important;
 }
 
@@ -1345,14 +1348,22 @@ html {
 #contactForm .form-groupC input::placeholder, 
 #contactForm .form-groupC textarea::placeholder, 
 .form-T .form-group input::placeholder{ /* Most modern browsers support this now. */
-    color: #A6A6A6;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(77, 77, 77, 0.5);
  }
+
 
  #contactForm .form-groupC input{
     background: #FFFFFF;
     box-shadow: 0px 0px 4px rgba(27, 142, 147, 0.25);
     border-radius: 4px;
+
  }
+
 
  .form-control:focus ,
  .form-select:focus{
@@ -1367,7 +1378,14 @@ html {
  .form-T .form-group input:focus,
  .form-group-Signup select:active,
  .form-group-Signup select:focus{
-    border: 1px solid #FF0000;
+    border: 1px solid #1B8E93;
+    color: #4D4D4D !important;
+ }
+ #contactForm .form-groupC input,
+ #contactForm .form-groupC textarea,
+ .form-T .form-group input,
+ .form-group-Signup select{
+    color: #4D4D4D !important;
  }
 
 #contactForm .form-groupC label {
@@ -1397,6 +1415,23 @@ html {
     padding: 0px 20px;
 }
 
+.captcha input[type='checkbox']{
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 10px !important;
+}
+
+.captcha label span{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: rgba(77, 77, 77, 0.75);
+}
 
 
 #contactForm .form-groupC input,
@@ -1653,9 +1688,9 @@ input {
 }
 
 input[type='checkbox'] {
-    accent-color:red;
+    accent-color:#F66303;
     background: #FFFFFF;
-        width: 12px;
+    width: 12px;
     height: 12px;
     margin-right: 7px;
     border: 1px solid rgba(77, 77, 77, 0.5);
@@ -2659,6 +2694,13 @@ input[type='checkbox']:after{
         width: -webkit-fill-available !important;
     }
 
+    .contactForm .row .recptcha {
+        width: -webkit-fill-available !important;
+    }
+    #contactForm .recptcha input {
+        width: 16px !important;
+    }
+
 
     /* SignUp Page*/
 
@@ -2947,6 +2989,16 @@ input[type='checkbox']:after{
         line-height: 18px;
     }
 
+    /* navbar */
+    .navbar-Sec,
+    .navbar-Sec .cusnavbar{
+        height: 82px !important;
+    }
+
+    .cusnavbar .container .show{
+        top: 82px;
+    }
+
     /* footer section */
 
     .footer-section .footer-con .footer-body .row .follow {
@@ -3013,6 +3065,7 @@ input[type='checkbox']:after{
 
     .first-sec {
         margin-bottom: 115px;
+        top: 82px;
     }
 
     .hero .qualified-Cont .leftQ-Con{
@@ -3046,6 +3099,7 @@ input[type='checkbox']:after{
     .expert-quality-Con .row .expertT {
         margin: 15px 0px;
         padding-top: 0.5rem !important;
+        padding: 0px !important;
     }
     .expert-quality-Con .expert-Title h3 {
         line-height: 40px;
@@ -3068,13 +3122,16 @@ input[type='checkbox']:after{
         text-align: center;
     }
 
-    .expert-quality-Con .row .expertT p {
+    .expert-quality-Con .row .expertT p,
+    .expert-quality-Con .row .expertT p  {
         font-size: 14px;
         line-height: 20px;
         width: 361px;
         height: 90px;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+        width: auto;
+        height: auto;
     }
    
     /* 4. homePage-What's Different Section */
@@ -3141,7 +3198,7 @@ input[type='checkbox']:after{
     /* -6.  homePage-Choose Section */
     
     .choose-Sec {
-        margin-top: 60px;
+        margin-top: 100px;
     }
 
     .choose-main-Con .row .choose-Con ul li span {
@@ -3152,12 +3209,20 @@ input[type='checkbox']:after{
     .choose-main-Con .row .choose-Con ul {
         padding-left: 12px;
     }
+    .choose-main-Con .row .choose-Con_One h6 {
+        width: inherit;
+        padding-left: 30px;
+        font-size: 32px !important;
+        line-height: 45px !important;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 
     /* 7. homePage-blog Section */
 
     .blog-Sec-b {
         display: flex !important;
-        margin-top: 100px;
+        margin-top: 85px;
     }
 
     .blog-Sec-a {
@@ -3266,6 +3331,7 @@ input[type='checkbox']:after{
         text-align: center;
         margin: auto;
         margin-bottom: 15px;
+        
     }
 
     .industries-Con .row .Industries-Features .Industries-F .connect {
@@ -3283,6 +3349,7 @@ input[type='checkbox']:after{
     .industries-Con .row .Industries-title p {
         font-size: 14px;
         line-height: 18px;
+        margin-bottom: 35px !important;
     }
 
     .industries-btn-b {
@@ -3303,7 +3370,8 @@ input[type='checkbox']:after{
     .hero .about-Con .left-about-Con h5 {
         margin-top: 10px;
         margin-right: 0px !important;
-        width: auto !important;
+        color: #4D4D4D;
+        /* width: auto !important; */
     }
 
     .hero .about-Con .left-about-Con {
@@ -3328,7 +3396,7 @@ input[type='checkbox']:after{
         font-style: normal;
         font-weight: 600;
         font-size: 32px !important;
-        line-height: 40px !important;
+        line-height: 43px !important;
         background: rgba(255, 255, 255, 0.75);
         border-radius: 0px 6px 6px 0px;
         width: 204px;
@@ -3339,7 +3407,7 @@ input[type='checkbox']:after{
     }
 
     .genuine-Sec {
-        margin-top: 170px;
+        margin-top: 145px;
     }
 
     /* Service page */
@@ -3358,13 +3426,29 @@ input[type='checkbox']:after{
     }
 
     .leads-main-Sec .leads-Con-body .leads-Con_One .lead-p-mob {
-        display: block !important;
         font-size: 14px;
         line-height: 18px;
-        text-align: center;
+        display: inline-block !important;
+        width: inherit;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 0px;
+    }
+
+    .leads-main-Sec .leads-Con-body .leads-Con_One h6{
+        text-align: initial;
     }
 
     /* 4. servicesPage-customer-Section */
+
+    /* choose section */
+    .choose-main-Con .row .choose-Con ul li {
+        width: 322px;
+    }
+    .choose-main-Con .row .choose-Con ul li p {
+        margin-right: 45px;
+    }
+
     .blogs-Card .swiper-slide .customer-card{
         margin: 10px !important;
     }
@@ -3378,6 +3462,9 @@ input[type='checkbox']:after{
     height: 307px;
     background: #FFFFFF;
     }
+    .customer-Sec .customer-body .customer-card p{
+        padding: 0px 20px;
+    }
 
 
     /* blog_index page  */
@@ -3387,7 +3474,7 @@ input[type='checkbox']:after{
     }
 
     .blogPage-Sec .blogPage-title .blogImg{
-        height: 300px;
+        height: 186px;
         margin-top: 40px !important;
     }
 
@@ -3452,6 +3539,7 @@ input[type='checkbox']:after{
 
     .hero .about-Con .left-contact h1.about-mobile-text {
         height: 110px;
+        line-height: 46px !important;
     }
 
     .contactForm-Sec .row .contact-form-block{
@@ -3587,6 +3675,12 @@ input[type='checkbox']:after{
 
 @media (max-width: 304px) {
 
+    /* about Page */
+    .hero .about-Con .left-about-Con h5 {
+        width: auto !important;
+        padding: 0px 10px;
+    }
+
     /* signup page */
 
     .form-body-Signup {
@@ -3606,10 +3700,63 @@ input[type='checkbox']:after{
     .cusnavbar .container .gigabitesoft-logo img {
         width: 170.05px !important;
     }
+
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        flex-wrap: initial;
+        justify-content:center;
+    }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 299px) {
 
+    /* buttons */
+    .started-btn,
+    .learn-white-btn  {
+        padding: 0px 0px !important;
+        width: 100px;
+        height: 30px;
+    }
+    .get-started-btn a,
+    .learn-wh-btn a {
+        font-size: 8px !important;
+        line-height: 15px !important;
+    }
+
+    /* homePage-Qualified Leads Section */
+
+    .hero .qualified-Cont .leftQ-Con .qualified {
+        top: 60px;
+    }
+    .hero .qualified-Cont .leftQ-Con h5 {
+       width: auto !important;
+       font-size: 12px !important;
+       margin-top: 0px;
+       margin-bottom: 0px;
+    }
+    .hero .qualified-Cont .leftQ-Con ul {
+        width: auto !important;
+        padding: 0px 10px;
+        padding-left: 30px;
+    }
+    .hero .qualified-Cont .leftQ-Con ul li span{
+       font-size: 10px;
+    }
+
+    .expert-quality-Con .row .expertT{
+        padding: 0px !important;
+    }
+
+    .expert-quality-Con .row .expertT p,
+    .expert-quality-Con .row .expertT h3 {
+        width: auto !important;
+        height: auto !important;
+        padding: 0px 10px !important;
+        font-size: 12px;
+    }
+    .expert-quality-Con .row .expertT h3 {
+        font-size: 15px !important;
+    }
+    
     /* 1. aboutPage-getToKnow- Section */
 
     .hero .about-Con .left-about-Con h1.about-mobile-text {
@@ -3625,11 +3772,6 @@ input[type='checkbox']:after{
         display: none !important;
     }
 
-    /* homePage-Qualified Leads Section */
-
-    .rightQ-Con .image-home .home-mobile{
-        margin-top: 40px;
-    }
 }
 
 

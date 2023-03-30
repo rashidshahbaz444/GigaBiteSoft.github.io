@@ -15,3 +15,4 @@
         mousewheel: true,
         keyboard: true,
       });
+
