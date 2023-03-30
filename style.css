@@ -1413,6 +1413,9 @@ html {
     width: auto !important;
     height: 88px;
     padding: 0px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(27, 142, 147, 0.25);
+    border-radius: 4px;
 }
 
 .captcha input[type='checkbox']{
@@ -1446,7 +1449,6 @@ textarea {
     background: #FFFFFF;
     box-shadow: 0px 0px 4px rgba(27, 142, 147, 0.25);
     border-radius: 4px;
-    border: none;
 }
 
 #contactForm .form-groupC textarea {
@@ -1461,7 +1463,6 @@ textarea {
     font-size: 14px;
     line-height: 18px;
     color: rgba(77, 77, 77, 0.5);
-    border: none;
 }
 
 #contactForm .form-groupC button {
@@ -3696,18 +3697,16 @@ input[type='checkbox']:after{
         font-size: 20px;
     }
 
-    /* navBar */
-    .cusnavbar .container .gigabitesoft-logo img {
-        width: 170.05px !important;
-    }
 
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
-        flex-wrap: initial;
-        justify-content:center;
-    }
+
 }
 
 @media only screen and (min-width: 200px) and (max-width: 299px) {
+        /* navBar */
+        .cusnavbar .container .gigabitesoft-logo img {
+            width: 135.05px !important;
+            height: 20px;
+        }
 
     /* buttons */
     .started-btn,
@@ -3721,11 +3720,27 @@ input[type='checkbox']:after{
         font-size: 8px !important;
         line-height: 15px !important;
     }
+    .help-Sec .help-btn,
+    .help-Sec .get-started-btn {
+        width: 87px;
+        height: 20px;
+    }
+
+    #contactForm .form-groupC button ,
+    .half .btn,
+    .signupForm .row .form-group-Signup-Submit .btn{
+        height: 29px;
+        padding: 0px !important;
+    }
+}
 
     /* homePage-Qualified Leads Section */
 
     .hero .qualified-Cont .leftQ-Con .qualified {
-        top: 60px;
+        top: 50px;
+    }
+    .hero .qualified-Cont .leftQ-Con {
+        margin-top: 0px !important;
     }
     .hero .qualified-Cont .leftQ-Con h5 {
        width: auto !important;
@@ -3772,7 +3787,32 @@ input[type='checkbox']:after{
         display: none !important;
     }
 
-}
+    .industries-Con .row .Industries-title p,
+    .customer-Sec .customer-body .customer-card p  {
+        font-size: 12px;
+    }
+    .industries-Con .row .Industries-Features .Industries-F p{
+        width: auto;
+        height: auto;
+    }
+    /* servicespage */
+    .choose-main-Con .row .choose-Con_One h6{
+        font-size: 23px !important;
+        line-height: 30px !important;
+    }
+    .choose-main-Con .row .choose-Con ul li p {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    /* contact-page */
+    .hero .qualified-Cont .leftQ-Con .mob-h5 {
+        width: auto !important;
+    }
+    .checkbox-primary{
+        font-size: 10px !important;
+    }
+
 
 
 /* End */
