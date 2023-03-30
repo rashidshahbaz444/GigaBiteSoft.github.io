@@ -24,8 +24,12 @@ html {
     width: 100%;
     z-index: 5;
     padding: 0px 0px;
+    height: 89px;
 }
 
+.navbar-Sec .cusnavbar{
+    height: 89px;
+}
 .cusnavbar .container .gigabitesoft-logo img {
     width: 252px;
     height: 36.2px;
@@ -38,19 +42,28 @@ html {
     align-items: center;
     padding: 0px;
     gap: 50px;
+    margin-left: auto;
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
     color: rgb(0, 0, 0);
-    margin-left: auto;
+}
+.cusnavbar .container .navbar-collapse ul  li a{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+.cusnavbar .container .navbar-collapse ul  li a:hover{
+    text-decoration: underline !important;
+    color: rgb(0, 0, 0);
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
     text-decoration: underline;
-    color: var(--bs-navbar-active-color);
+    color: rgb(0, 0, 0) !important;
+    cursor: context-menu;
 }
 
 .cusnavbar .container .navbar-collapse ul li button {
@@ -85,6 +98,7 @@ html {
     transition-duration: 500ms;
     outline: 0 solid transparent;
     transition: ease-out;
+    text-decoration: none !important;
 }
 
 /* Footer */
@@ -101,6 +115,11 @@ html {
     height: 35.32px;
 }
 
+.footer-section .footer-con .footer-body .row .company-contact{
+    padding: 0px;
+    margin: 0px;
+}
+
 .footer-section .footer-con .footer-body .row .company-contact p {
     font-family: 'Poppins';
     font-style: normal;
@@ -108,6 +127,7 @@ html {
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+    padding-left: 4px;
 }
 
 .footer-section .footer-con .footer-body .row .company-contact p span {
@@ -135,16 +155,18 @@ html {
 .footer-section .footer-con .footer-body .row p a {
     font-family: 'Outfit';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 20px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.9);
+    font-size: medium;
 }
 
 .footer-section .footer-con .footer-body .row p a:hover {
     text-decoration-line: underline !important;
     color: #F8F8F8;
+    font-weight: 500 ;
 }
 
 .footer-body .row .company p a.active {
@@ -286,6 +308,7 @@ html {
 .hero .qualified-Cont .leftQ-Con {
     margin: 0;
     padding: 0;
+    margin-top: 110px;
 }
 
 
@@ -296,6 +319,7 @@ html {
     font-size: 18px;
     line-height: 22px;
     color: #4D4D4D;
+    margin: 30px 0px;
 }
 
 .hero .qualified-Cont .leftQ-Con ul {
@@ -343,7 +367,7 @@ html {
 
 
 .qualified-buttons {
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 .rightQ-Con {
@@ -359,8 +383,8 @@ html {
 
 .first-sec {
     position: relative;
-    top: 73px;
-    margin-bottom: 150px;
+    top: 88px;
+    margin-bottom: 200px;
 }
 .expert-quality-Sec {
     margin-top: 50px;
@@ -418,7 +442,7 @@ html {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 26px;
     color: rgba(77, 77, 77, 0.8);
 }
 
@@ -559,6 +583,10 @@ html {
     line-height: 21px;
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.different-Con .row .diff-Con-Two .diff-Two{
+    padding: 8px 0px;
 }
 
 .different-Con .row .diff-Con-Two h6 {
@@ -842,7 +870,7 @@ html {
 /* 2. aboutPage-Guninue-Sec */
 .genuine-Sec {
     position: relative;
-    margin-top: 150px;
+    margin-top: 210px;
     /* margin-bottom: 160px; */
 }
 
@@ -993,7 +1021,7 @@ html {
 /* 2. service-Page leads Section */
 
 .leads-Sec {
-    margin-top: 100px;
+    margin-top: 210px;
 }
 
 .leads-main-Sec .leads-Con-body .leads-Con_One h6 {
@@ -1309,10 +1337,38 @@ html {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 21px;
     color: #FFFFFF;
 }
+
+#contactForm .form-groupC input::placeholder, 
+#contactForm .form-groupC textarea::placeholder, 
+.form-T .form-group input::placeholder{ /* Most modern browsers support this now. */
+    color: #A6A6A6;
+ }
+
+ #contactForm .form-groupC input{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(27, 142, 147, 0.25);
+    border-radius: 4px;
+ }
+
+ .form-control:focus ,
+ .form-select:focus{
+    box-shadow: none !important;
+ }
+
+ #contactForm .form-groupC input:active,
+ #contactForm .form-groupC input:focus,
+ #contactForm .form-groupC textarea:active,
+ #contactForm .form-groupC textarea:focus,
+ .form-T .form-group input:active,
+ .form-T .form-group input:focus,
+ .form-group-Signup select:active,
+ .form-group-Signup select:focus{
+    border: 1px solid #FF0000;
+ }
 
 #contactForm .form-groupC label {
     font-family: 'Outfit';
@@ -1327,6 +1383,22 @@ html {
     height: 45px;
 }
 
+.contactForm .row .recptcha {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(27, 142, 147, 0.25);
+    border-radius: 4px;
+    width: 628px !important;
+    height: 88px;
+}
+
+.contactForm .row .recptcha .captcha{
+    width: auto !important;
+    height: 88px;
+    padding: 0px 20px;
+}
+
+
+
 #contactForm .form-groupC input,
 textarea {
     font-family: 'Outfit';
@@ -1339,7 +1411,7 @@ textarea {
     background: #FFFFFF;
     box-shadow: 0px 0px 4px rgba(27, 142, 147, 0.25);
     border-radius: 4px;
-
+    border: none;
 }
 
 #contactForm .form-groupC textarea {
@@ -1354,6 +1426,7 @@ textarea {
     font-size: 14px;
     line-height: 18px;
     color: rgba(77, 77, 77, 0.5);
+    border: none;
 }
 
 #contactForm .form-groupC button {
@@ -1393,6 +1466,15 @@ textarea {
     width: -webkit-fill-available;
 }
 
+.form-group label{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #4D4D4D;
+}
+
 
 .login-Sec .half .row .login-form {
     display: flex;
@@ -1428,6 +1510,7 @@ textarea {
     align-items: flex-start;
     padding: 13px 15px;
     gap: 10px;
+    border: none;
 }
 
 .form-control {
@@ -1458,6 +1541,7 @@ textarea {
     gap: 10px;
     width: 410px;
     height: 44px;
+    border: none;
 }
 
 .login-Sec .half .row .login-form h5 {
@@ -1547,60 +1631,41 @@ a:hover {
 }
 
 .checkbox-wrap {
-    display: block;
-    position: relative;
-    padding-left: 25px;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
-.checkbox-wrap input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-input[type="radio"],
+/* input[type="radio"],
 input[type="checkbox"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
-}
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border: 1px solid rgba(77, 77, 77, 0.5);
+    border-radius: 3px;
+} */
 
 button,
 input {
     overflow: visible;
 }
 
-.checkmark {
-    position: absolute;
-    top: 2px;
-    left: 0;
-}
-
-.checkbox-wrap input:checked~.checkmark:after {
-    display: block;
-    content: "\f14a";
-    font-family: "FontAwesome";
-    color: #f52202;
-    width: 11px;
-    height: 14px;
-}
-
-.checkmark:after {
-    content: "\f0c8";
-    font-family: "FontAwesome";
-    position: absolute;
-    color: rgba(249, 246, 246, 0.1);
-    width: 10px;
-    height: 10px;
-    margin-top: 0px;
-    margin-left: 3px;
-    transition: 0.3s;
+input[type='checkbox'] {
+    accent-color:red;
     background: #FFFFFF;
-    border: 0.5px solid rgba(77, 77, 77, 0.5);
-    border-radius: 2px;
+        width: 12px;
+    height: 12px;
+    margin-right: 7px;
+    border: 1px solid rgba(77, 77, 77, 0.5);
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type='checkbox']:after{
+    /* border: 1px solid rgba(77, 77, 77, 0.5); */
+    border: none !important;
+    border-radius: 3px;
 }
 
 .form-T .row small {
@@ -1651,7 +1716,6 @@ input {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
 }
-
 
 .form-body-Signup h5 strong {
     font-family: 'Outfit';
@@ -1714,6 +1778,7 @@ input {
     background-repeat: no-repeat;
     background-position-x: 94%;
     background-position-y: center;
+    border: none;
 }
 
 .signupForm .row .form-group-Signup-Submit .btn {
@@ -1830,8 +1895,16 @@ input {
         gap: 10px;
     }
 
+    /* help- Sec  */
+
     .help-Sec .help-buttons {
         padding-left: 110px;
+    }
+
+    .help-Sec .row {
+        padding: 55px 0px;
+        width: 1280px;
+        height: 200px;
     }
 
     .help-Sec h3,
@@ -1854,6 +1927,7 @@ input {
     .help-Sec p {
         margin-left: 75px;
     }
+
 }
 
 @media only screen and (min-width: 1350px) and (max-width: 1650px) {
@@ -2050,11 +2124,15 @@ input {
         margin: auto;
     }
 
+   .navbar-toggler{
+    height: 75px !important;
+    }
     .cusnavbar .container .show {
         position: absolute;
         z-index: 1;
         right: 0px;
-        top: 57px;
+        /* top: 57px; */
+        top: 89px;
         background-color: white;
         width: 100%;
     }
@@ -2139,11 +2217,18 @@ input {
 
     .qualified-Cont .leftQ-Con {
         text-align: start !important;
-        margin-top: 35px;
+        margin-top: 35px !important;
+        
     }
 
     .hero .qualified-Cont .leftQ-Con img {
         left: 143px;
+    }
+
+    .qualified-buttons {
+        margin-top: 30px;
+        width: 498px;
+        height: 55px;
     }
 
     .hero .qualified-Cont .left-about-Con h1 {
@@ -2166,11 +2251,13 @@ input {
     }
 
     .hero .qualified-Cont .leftQ-Con h5 {
-        margin-top: 50px;
+        margin-top: 10px;
+        width: 535px;
+        /* height: 20px; */
     }
     .first-sec {
         position: relative;
-        top: 57px;
+        top: 87px;
         margin-bottom: 180px;
     }
 
@@ -2453,17 +2540,17 @@ input {
         font-size: 14px;
         line-height: 18px;
         color: #FFFFFF;
-        margin-top: 10px !important;
+        margin-top: 15px !important;
         margin-bottom: 0px !important;
     }
 
     .footer-section .footer-con .footer-body .row p {
         margin-bottom: 0px !important;
-        margin-top: 10px !important;
+        margin-top:5px !important;
     }
 
     .footer-section .footer-con .footer-body .row .icons-footer {
-        margin-top: 10px !important;
+        margin-top: 25px !important;
         margin-bottom: 30px !important;
     }
 
@@ -2632,6 +2719,10 @@ input {
         right: 0px;
     }
 
+    .qualified-buttons {
+        width: auto;
+    }
+
     .hero .qualified-Cont .leftQ-Con .qualified {
         width: 400px;
         top: 190px;
@@ -2776,6 +2867,8 @@ input {
         width: -webkit-fill-available !important;
     }
 
+
+
 }
 
 @media only screen and (min-width: 200px) and (max-width: 480px) {
@@ -2857,7 +2950,8 @@ input {
     /* footer section */
 
     .footer-section .footer-con .footer-body .row .follow {
-        margin-bottom: 18px !important;
+        margin-top: 25px !important;
+        margin-bottom: 30px !important;
     }
     
     .footer-section .footer-con .footer-body .row .company-contact .lead-footer {
@@ -2921,6 +3015,10 @@ input {
         margin-bottom: 115px;
     }
 
+    .hero .qualified-Cont .leftQ-Con{
+        margin-top: 15px !important;
+    }
+
     .hero .qualified-Cont .leftQ-Con ul {
         width: 318px;
         height: 108px;
@@ -2931,6 +3029,7 @@ input {
     }
     .hero .qualified-Cont .leftQ-Con h5 {
         line-height: 20px;
+        margin: 15px 0px;
     }
 
     .hero .qualified-Cont .leftQ-Con img {
@@ -2945,17 +3044,19 @@ input {
     /* 2. homePage-Expert Quality Section */
 
     .expert-quality-Con .row .expertT {
-        margin-bottom: 0px;
+        margin: 15px 0px;
         padding-top: 0.5rem !important;
     }
     .expert-quality-Con .expert-Title h3 {
         line-height: 40px;
         font-size: 32px;
+        margin-bottom: 15px;
     }
 
     .expert-quality-Con .expert-Title p {
         font-size: 16px;
         line-height: 20px;
+        margin-bottom: 15px;
     }
 
     .expert-quality-Con .row .expertT h3 {
@@ -2969,7 +3070,7 @@ input {
 
     .expert-quality-Con .row .expertT p {
         font-size: 14px;
-        line-height: 18px;
+        line-height: 20px;
         width: 361px;
         height: 90px;
         padding-left: 0px !important;
@@ -3030,8 +3131,8 @@ input {
     }
 
     .section-heading-mob{
-        display: block !important;
-        width: auto !important;
+        display: inline-block !important;
+        /* width: auto !important; */
     }
     .bussiness-btn{
         margin-top: 0px !important;
@@ -3056,6 +3157,7 @@ input {
 
     .blog-Sec-b {
         display: flex !important;
+        margin-top: 100px;
     }
 
     .blog-Sec-a {
@@ -3082,6 +3184,10 @@ input {
     .swiper-autoheight .swiper-slide,
     .blogs-Card .card-slide .image img {
         height: 314px !important;
+    }
+
+    .swiper-css-mode>.swiper-wrapper>.swiper-slide {
+        border-radius: 10px;
     }
 
     .blogs-Card .card-slide .blogCard-text h6 {
@@ -3191,10 +3297,13 @@ input {
 
     .hero .about-Con .left-about-Con h1.about-mobile-text {
         display: block !important;
+        height: 150px;
     }
 
     .hero .about-Con .left-about-Con h5 {
         margin-top: 10px;
+        margin-right: 0px !important;
+        width: auto !important;
     }
 
     .hero .about-Con .left-about-Con {
@@ -3229,6 +3338,10 @@ input {
         color: #4D4D4D;
     }
 
+    .genuine-Sec {
+        margin-top: 170px;
+    }
+
     /* Service page */
     
     /* 1. servicesPage-Services-provide- Section */
@@ -3251,11 +3364,81 @@ input {
         text-align: center;
     }
 
+    /* 4. servicesPage-customer-Section */
+    .blogs-Card .swiper-slide .customer-card{
+        margin: 10px !important;
+    }
+
+    .customer-Sec .customer-body .customer{
+        display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: auto;
+    height: 307px;
+    background: #FFFFFF;
+    }
+
+
+    /* blog_index page  */
+    .blogPage-Sec .blogPage-title h6 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .blogPage-Sec .blogPage-title .blogImg{
+        height: 300px;
+        margin-top: 40px !important;
+    }
+
+    .blogPage-Sec .blogPage-title p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .blogPage-Sec .blogPage-body h6 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .blogPage-Sec .blogPage-body .blogOne-article ol li p, .blogPage-body p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+
     /* mortage_Service page */
 
     .mortage-Sec {
-        margin-bottom: 170px;
+        top: 0px !important;
     }
+
+    .mortage-Sec .mortage-Con .mortage-title h2 {
+        font-size: 42px;
+        line-height: 53px;
+    }
+
+    .mortage-Sec .mortage-Con .mortage-title h6{
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 0px;
+    }
+
+    .mortage-Sec .mortage-Con .mortage-title p,
+    .mortage-Sec .mortage-Con .mortage-item p  {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .mortage-Sec .mortage-Con .mortage-item{
+        margin-top: 10px !important;
+    }
+
+    .mortage-Sec .mortage-Con .mortage-item h4 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
 
     /* Contact page */
 
@@ -3266,6 +3449,15 @@ input {
     .contactForm-Sec{
         margin-bottom: 115px;
     }
+
+    .hero .about-Con .left-contact h1.about-mobile-text {
+        height: 110px;
+    }
+
+    .contactForm-Sec .row .contact-form-block{
+        padding: 0px !important;
+    }
+
 
     /* SignUp page */
 
@@ -3281,6 +3473,11 @@ input {
         width: 255px;
     }
 
+    .form-group label{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
 }
 
 @media (max-width: 450px) {
@@ -3311,10 +3508,21 @@ input {
         height: 171px !important;
     }
 
+    /* homePage-bussiness-sec */
+    .section-heading-mob{
+        width: auto !important;
+    }
+
     /* signup form */
     .form-body-Signup h5 strong {
         font-size: 25px;
     }
+
+    /* Service page customer sec */
+    .customer-Sec .customer-body .customer-card p{
+        width: auto;
+    }
+
 }
 
 @media (max-width: 333px) {
@@ -3367,7 +3575,7 @@ input {
     /* 1. aboutPage-getToKnow- Section */
 
     .hero .about-Con .left-about-Con {
-        margin-top: 70px;
+        margin-top: 70px !important;
     }
 
     .hero .about-Con .left-about-Con h1 {
