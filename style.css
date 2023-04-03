@@ -3707,23 +3707,28 @@ input[type='checkbox']:after{
             width: 135.05px !important;
             height: 20px;
         }
+        .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+            padding: 0px !important;
+        }
 
     /* buttons */
     .started-btn,
-    .learn-white-btn  {
+    .learn-white-btn,
+    .learn-btn  {
         padding: 0px 0px !important;
-        width: 100px;
+        width: 105px;
         height: 30px;
     }
     .get-started-btn a,
-    .learn-wh-btn a {
+    .learn-wh-btn a,
+    .learn-y-btn a {
         font-size: 8px !important;
         line-height: 15px !important;
     }
     .help-Sec .help-btn,
     .help-Sec .get-started-btn {
         width: 87px;
-        height: 20px;
+        height: 25px;
     }
 
     #contactForm .form-groupC button ,
