@@ -1997,6 +1997,11 @@ input[type='checkbox']:after{
     .choose-main-Con .row .choose-Con ul li span {
         font-size: 16px;
     }
+     /* help Section */
+
+     .help-Sec .help-buttons {
+        padding-left: 5px;
+    }
 }
 
 @media only screen and (min-width: 1206px) and (max-width: 1349px) {
@@ -2108,6 +2113,9 @@ input[type='checkbox']:after{
     .help-Sec h3,
     .help-Sec p {
         margin-left: 0px;
+    }
+    .help-Sec p{
+        width: auto;
     }
 
     /* homePage-blog Section */
